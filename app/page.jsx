@@ -1,12 +1,13 @@
 // app/page.jsx
-"use client";
 
 import Link from "next/link";
 import { posts } from "./articulos/posts";
 
 export default function Home() {
-  // Tomamos los 4 artículos más recientes
-  const latestPosts = posts.slice(0, 4);
+  // Tomamos los 4 artículos más recientes, ordenados por fecha descendente
+  const latestPosts = [...posts]
+    .sort((a, b) => new Date(b.date) - new Date(a.date))
+    .slice(0, 4);
 
   return (
     <div className="home" style={{ display: "grid", gap: 24 }}>
@@ -80,24 +81,13 @@ export default function Home() {
         {/* GRID DE ARTÍCULOS */}
         <div className="post-grid" style={{ marginTop: 14 }}>
           {latestPosts.map((post) => {
-            // Primero intentamos usar cover, luego image desde ./articulos/posts
-            let cover = post.cover || post.image || null;
-
-            // Si aún así no hay, aplicamos fallback por slug (IA FPS / ARK)
-            if (!cover) {
-              const slug = String(post.slug || "").toLowerCase();
-
-              if (slug.includes("ia") && slug.includes("fps")) {
-                cover = "/articulos/mitad-ia-fps.png";
-              } else if (slug.includes("ark") && slug.includes("raider")) {
-                cover = "/articulos/thumbnail_ark_raiders_600x400.png";
-              }
-            }
+            // Usamos directamente la imagen definida en app/articulos/posts.js
+            const cover = post.image || null;
 
             return (
               <Link
                 key={post.slug}
-                href={`/articulos/${post.slug}`}
+                href={post.href} // usamos el href del post para no depender del formato del slug
                 className="clickable-card-link"
                 style={{ textDecoration: "none", color: "inherit" }}
               >
