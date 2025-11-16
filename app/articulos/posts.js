@@ -1,6 +1,18 @@
-// app/articulos/posts.js
-
 export const posts = [
+  {
+    slug: "posts/nuevo-hardware-steam-2026",
+    title:
+      "El nuevo hardware de Steam que llega en 2026: Steam Machine, Steam Frame y Steam Controller",
+    date: "2025-11-15",
+    readingTime: "8 min de lectura",
+    meta: "15 de noviembre de 2025 · 8 min de lectura",
+    excerpt:
+      "Repaso completo al nuevo hardware de Steam que llega en 2026: Steam Machine, Steam Frame y la segunda generación del Steam Controller, y qué significan para los jugadores de PC.",
+    href: "/articulos/posts/nuevo-hardware-steam-2026",
+    image: "/articulos/banner-steam-hardware-2026.png",
+    thumbClass: "thumb-game",
+    tags: ["Steam", "Hardware", "PC gamer", "VR"],
+  },
   {
     slug: "posts/como-optimizar-windows-11-para-juegos",
     title: "Cómo optimizar Windows 11 para juegos en 2025 (sin romper tu PC)",
