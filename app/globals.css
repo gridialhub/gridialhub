@@ -647,10 +647,10 @@ a, button {
 }
 /* ===== Ajuste solo para la imagen central del artículo de ARK Raiders ===== */
 .article-content figure.ark-mid img {
-  max-height: none;   /* sin límite de altura */
-  height: auto;       /* respeta la proporción original */
-  object-fit: contain; /* muestra toda la imagen, sin recortar */
-
+  max-height: none;    /* sin límite de altura */
+  height: auto;        /* respeta la proporción original */
+  object-fit: contain; /* muestra toda la imagen completa, sin recortar */
+}
 
 
 
