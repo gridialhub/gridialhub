@@ -1,6 +1,22 @@
 // app/articulos/posts.js
 
 export const posts = [
+  // 1) Windows 11 gamer
+  {
+    slug: "posts/como-optimizar-windows-11-para-juegos",
+    title: "Cómo optimizar Windows 11 para juegos en 2025 (sin romper tu PC)",
+    date: "2025-11-15",
+    readingTime: "9 min de lectura",
+    meta: "15 de noviembre de 2025 · 9 min de lectura",
+    excerpt:
+      "Guía práctica para optimizar Windows 11 para juegos en 2025: ajustes clave para más FPS y menos stuttering sin arruinar tu sistema.",
+    href: "/articulos/posts/como-optimizar-windows-11-para-juegos",
+    image: "/articulos/banner-windows-11-gaming.png", // crea esta imagen en public/articulos
+    thumbClass: "thumb-pc",
+    tags: ["Windows 11", "Optimización", "PC gamer", "Rendimiento"],
+  },
+
+  // 2) IA optimizando FPS
   {
     slug: "posts/ia_fps",
     title:
@@ -13,10 +29,10 @@ export const posts = [
     href: "/articulos/posts/ia_fps",
     image: "/articulos/mitad-ia-fps.png",
     thumbClass: "thumb-pc",
-    // Si más adelante quieres, puedes agregar también:
-    // bannerImage: "/articulos/lo-que-sea.png",
-    // midImage: "/articulos/otra-imagen.png",
+    tags: ["IA", "FPS", "Optimización"],
   },
+
+  // 3) ARK Raiders
   {
     slug: "posts/ark-raiders",
     title: "ARK Raiders: cómo la IA está llevando el gameplay a otro nivel",
@@ -28,7 +44,10 @@ export const posts = [
     href: "/articulos/posts/ark-raiders",
     image: "/articulos/thumbnail_ark_raiders_600x400.png",
     thumbClass: "thumb-game",
+    tags: ["ARK Raiders", "IA", "Shooter cooperativo"],
   },
+
+  // 4) Qué GPU comprar
   {
     slug: "posts/que-grafica-comprar-sin-botar-la-plata",
     title: "Qué tarjeta gráfica comprar en 2025 sin botar la plata",
@@ -38,11 +57,12 @@ export const posts = [
     excerpt:
       "Guía clara para elegir la GPU correcta según tu monitor, tus juegos y tu presupuesto, evitando el sobreprecio y el marketing vacío.",
     href: "/articulos/posts/que-grafica-comprar-sin-botar-la-plata",
-    // 👇 imagen que se usará en la ficha (thumbnail/banner)
+    // miniatura para /articulos y la home
     image: "/articulos/duda-sobre-tarjeta.png",
     thumbClass: "thumb-pc",
-    // 👇 imágenes internas del artículo
+    // imágenes internas del artículo
     bannerImage: "/articulos/duda-sobre-tarjeta.png",
     midImage: "/articulos/Firefly-jugando.png",
+    tags: ["GPU", "Hardware", "Relación precio-rendimiento"],
   },
 ];
