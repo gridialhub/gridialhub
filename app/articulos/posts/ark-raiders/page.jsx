@@ -61,9 +61,9 @@ export default function ArkRaidersPage() {
           coordina ataques y detecta debilidades del escuadrón.
         </p>
 
-        {/* Imagen interna */}
+                {/* Imagen interna */}
         <figure
-          className="article-image"
+          className="article-image ark-mid" // 👈 le añadimos la clase ark-mid
           style={{
             margin: "18px 0",
             borderRadius: 14,
@@ -74,9 +74,9 @@ export default function ArkRaidersPage() {
           <img
             src="/articulos/arkraiders_gameplay_mid.png"
             alt="Gameplay de ARK Raiders"
-            style={{ width: "100%", display: "block", objectFit: "cover" }}
+            // 👇 quitamos el objectFit: "cover" para no pelear con el CSS específico
+            style={{ width: "100%", display: "block" }}
           />
-          {/* figcaption eliminado */}
         </figure>
 
         <h3>Una IA que se siente “viva”</h3>
