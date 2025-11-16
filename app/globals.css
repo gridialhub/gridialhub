@@ -645,6 +645,14 @@ a, button {
   max-height: 360px;   /* baja a 300 si aún las ves grandes */
   object-fit: cover;
 }
+/* ===== Ajuste solo para la imagen central del artículo de ARK Raiders ===== */
+.article-content figure.ark-mid img {
+  max-height: none;   /* sin límite de altura */
+  height: auto;       /* respeta la proporción original */
+  object-fit: contain; /* muestra toda la imagen, sin recortar */
+
+
+
 
 
 
