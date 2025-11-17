@@ -37,7 +37,7 @@ export default function Sorteos() {
             lineHeight: 1.6,
           }}
         >
-          Para agradecer todo el apoyo, haré un sorteo especial para mi comunidad de 200 dolares repartido entre 5 ganadores.
+          Para agradecer todo el apoyo, haré un sorteo especial para mi comunidad de 200 dolares repartido entre 3 ganadores.
           Participan mis seguidores en las distintas plataformas donde estoy activo (
           <b>TikTok</b>, <b>Twitch</b>, <b>YouTube</b>, <b>Facebook</b> y <b>Kick</b>).
           El sorteo se realizará en directo y todo el proceso será transparente.
@@ -168,6 +168,7 @@ export default function Sorteos() {
     </div>
   );
 }
+
 
 
 
