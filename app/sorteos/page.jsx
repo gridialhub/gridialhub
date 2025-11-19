@@ -1,4 +1,47 @@
-"use client";
+// app/sorteos/page.jsx
+
+// 🔹 METADATA PARA SEO Y CANONICAL
+export const metadata = {
+  title: "Sorteos de GridialHub | Participa y gana premios para gamers",
+  description:
+    "Participa en el primer sorteo de Navidad de GridialHub: 200 dólares repartidos entre 3 ganadores. Descubre cómo participar y aumenta tus oportunidades siguiendo las redes.",
+  alternates: {
+    canonical: "/sorteos", // https://gridialhub.com/sorteos
+  },
+};
+
+const redes = [
+  {
+    name: "TikTok",
+    url: "https://www.tiktok.com/@gridial",
+    color: "#ff0050",
+    icon: "tiktok",
+  },
+  {
+    name: "Twitch",
+    url: "https://www.twitch.tv/gridialtv",
+    color: "#9146FF",
+    icon: "twitch",
+  },
+  {
+    name: "YouTube",
+    url: "https://www.youtube.com/@Gridial",
+    color: "#FF0000",
+    icon: "youtube",
+  },
+  {
+    name: "Facebook",
+    url: "https://www.facebook.com/GridialOfficial",
+    color: "#1877F2",
+    icon: "facebook",
+  },
+  {
+    name: "Kick",
+    url: "https://kick.com/gridialtv",
+    color: "#52ff00",
+    icon: "kick",
+  },
+];
 
 export default function Sorteos() {
   return (
@@ -12,8 +55,10 @@ export default function Sorteos() {
           borderRadius: "20px",
           maxWidth: 900,
           background: "color-mix(in oklab, var(--card), transparent 8%)",
-          border: "1px solid color-mix(in oklab, var(--border), var(--brand) 18%)",
-          boxShadow: "0 10px 26px color-mix(in oklab, #000, var(--brand) 15%)",
+          border:
+            "1px solid color-mix(in oklab, var(--border), var(--brand) 18%)",
+          boxShadow:
+            "0 10px 26px color-mix(in oklab, #000, var(--brand) 15%)",
           textAlign: "center",
         }}
       >
@@ -37,11 +82,13 @@ export default function Sorteos() {
             lineHeight: 1.6,
           }}
         >
-          Para agradecer todo el apoyo, haré un sorteo especial para mi comunidad de 200 dolares repartido entre 3 ganadores.
-          El primer lugar ganara 100 dolares, segundo lugar 50 dolares y tercer lugar 50 dolares.
-          Participan mis seguidores en las distintas plataformas donde estoy activo (
-          <b>TikTok</b>, <b>Twitch</b>, <b>YouTube</b>, <b>Facebook</b> y <b>Kick</b>).
-          El sorteo se realizará en directo y todo el proceso será transparente.
+          Para agradecer todo el apoyo, haré un sorteo especial para mi
+          comunidad de 200 dólares repartido entre 3 ganadores. El primer lugar
+          ganará 100 dólares, segundo lugar 50 dólares y tercer lugar 50
+          dólares. Participan mis seguidores en las distintas plataformas donde
+          estoy activo (<b>TikTok</b>, <b>Twitch</b>, <b>YouTube</b>,{" "}
+          <b>Facebook</b> y <b>Kick</b>). El sorteo se realizará en directo y
+          todo el proceso será transparente.
           <br />
           <br />
           Para conocer las <b>reglas y bases del sorteo</b>, visita la sección{" "}
@@ -49,7 +96,8 @@ export default function Sorteos() {
           <br />
           <br />
           <b>
-            Conforme vayamos creciendo como comunidad, mejores sorteos vendrán a futuro.
+            Conforme vayamos creciendo como comunidad, mejores sorteos vendrán
+            a futuro.
           </b>
         </p>
 
@@ -85,44 +133,14 @@ export default function Sorteos() {
             marginTop: "12px",
           }}
         >
-          {[
-            {
-              name: "TikTok",
-              url: "https://www.tiktok.com/@gridial",
-              color: "#ff0050",
-              icon: "tiktok",
-            },
-            {
-              name: "Twitch",
-              url: "https://www.twitch.tv/gridialtv",
-              color: "#9146FF",
-              icon: "twitch",
-            },
-            {
-              name: "YouTube",
-              url: "https://www.youtube.com/@Gridial",
-              color: "#FF0000",
-              icon: "youtube",
-            },
-            {
-              name: "Facebook",
-              url: "https://www.facebook.com/GridialOfficial",
-              color: "#1877F2",
-              icon: "facebook",
-            },
-            {
-              name: "Kick",
-              url: "https://kick.com/gridialtv",
-              color: "#52ff00",
-              icon: "kick",
-            },
-          ].map((r) => (
+          {redes.map((r) => (
             <a
               key={r.name}
               href={r.url}
               target="_blank"
               rel="noreferrer"
               title={r.name}
+              className="social-icon"
               style={{
                 width: "38px",
                 height: "38px",
@@ -132,24 +150,7 @@ export default function Sorteos() {
                 borderRadius: "50%",
                 background: "#121216",
                 border: `1px solid ${r.color}`,
-                transition:
-                  "all 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease, filter 0.2s ease",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = "scale(1.18)";
-                e.currentTarget.style.boxShadow = `0 0 12px ${r.color}`;
-                e.currentTarget.style.filter = "brightness(1.15)";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = "scale(1)";
-                e.currentTarget.style.boxShadow = "none";
-                e.currentTarget.style.filter = "brightness(1)";
-              }}
-              onMouseDown={(e) => {
-                e.currentTarget.style.transform = "scale(0.96)";
-              }}
-              onMouseUp={(e) => {
-                e.currentTarget.style.transform = "scale(1.18)";
+                color: r.color, // para usar currentColor en el hover de CSS
               }}
             >
               <img
@@ -169,9 +170,3 @@ export default function Sorteos() {
     </div>
   );
 }
-
-
-
-
-
-
