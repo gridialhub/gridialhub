@@ -4,30 +4,42 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 export const metadata = {
+  metadataBase: new URL("https://gridialhub.com"),
   title: {
     default: "GridialHub — Comunidad & Sorteos Gaming",
     template: "%s | GridialHub",
   },
   description:
     "Comunidad gamer con sorteos, artículos de videojuegos/tecnología y eventos en vivo.",
-  metadataBase: new URL("https://gridialhub.com"),
   robots: { index: true, follow: true },
   openGraph: {
     title: "GridialHub — Comunidad & Sorteos Gaming",
     description:
       "Sorteos transparentes, artículos, tecnología y comunidad gamer global.",
-    url: "https://gridialhub.com",
+    url: "/",              // usa metadataBase como base
     siteName: "GridialHub",
-    images: [{ url: "https://gridialhub.com/og-image.jpg", width: 1200, height: 630 }],
     locale: "es_ES",
     type: "website",
+    images: [
+      {
+        url: "/gridialhub-og.png",  // 👈 banner que hicimos (1200x630)
+        width: 1200,
+        height: 630,
+        alt: "GridialHub — comunidad gamer, artículos y sorteos",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "GridialHub — Comunidad & Sorteos Gaming",
-    images: ["https://gridialhub.com/og-image.jpg"],
+    description:
+      "Artículos de gaming, hardware y sorteos para la comunidad de Gridial.",
+    images: ["/gridialhub-og.png"], // 👈 mismo banner para Twitter/X
   },
-  icons: { icon: "/favicon.ico", apple: "/apple-touch-icon.png" },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
