@@ -41,18 +41,19 @@ export const posts = [
     tags: ["IA", "FPS", "Optimización"],
   },
   {
-    slug: "posts/ark-raiders",
-    title: "ARK Raiders: cómo la IA está llevando el gameplay a otro nivel",
-    date: "2025-11-14",
-    readingTime: "7 min de lectura",
-    meta: "14 de noviembre de 2025 · 7 min de lectura",
-    excerpt:
-      "ARK Raiders combina acción cooperativa con inteligencia artificial avanzada para crear enfrentamientos dinámicos, impredecibles y desafiantes.",
-    href: "/articulos/posts/ark-raiders",
-    image: "/articulos/thumbnail_ark_raiders_600x400.png",
-    thumbClass: "thumb-game",
-    tags: ["ARK Raiders", "IA", "Shooter cooperativo"],
-  },
+  slug: "posts/ark-raiders", // puedes dejar el slug así por ahora
+  title: "ARC Raiders: cómo la IA está llevando el gameplay a otro nivel",
+  date: "2025-11-14",
+  readingTime: "7 min de lectura",
+  meta: "14 de noviembre de 2025 · 7 min de lectura",
+  excerpt:
+    "ARC Raiders combina acción cooperativa con inteligencia artificial avanzada para crear enfrentamientos dinámicos, impredecibles y desafiantes.",
+  href: "/articulos/posts/ark-raiders",
+  image: "/articulos/thumbnail_ark_raiders_600x400.png",
+  thumbClass: "thumb-game",
+  tags: ["ARC Raiders", "IA", "Shooter cooperativo"],
+}
+,
   {
     slug: "posts/que-grafica-comprar-sin-botar-la-plata",
     title: "Qué tarjeta gráfica comprar en 2025 sin botar la plata",
