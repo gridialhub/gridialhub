@@ -5,6 +5,9 @@ export const metadata = {
     "Qué tarjeta gráfica comprar en 2025 sin botar la plata | Guía para gamers | GridialHub",
   description:
     "Te explico cómo elegir la mejor tarjeta gráfica según tu presupuesto, tipo de juegos y monitor, evitando el sobreprecio y el marketing vacío.",
+  alternates: {
+    canonical: "/articulos/posts/que-grafica-comprar-sin-botar-la-plata",
+  },
 };
 
 export default function QueGraficaComprarPage() {
