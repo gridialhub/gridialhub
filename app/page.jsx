@@ -1,7 +1,16 @@
 // app/page.jsx
-
 import Link from "next/link";
 import { posts } from "./articulos/posts";
+
+// 🔹 METADATA PARA SEO Y CANONICAL
+export const metadata = {
+  title: "GridialHub | Gaming, sorteos y tecnología",
+  description:
+    "GridialHub es un espacio para gamers y creadores de contenido: guías, novedades, análisis y sorteos para mejorar tu experiencia de juego.",
+  alternates: {
+    canonical: "/", // con metadataBase en layout → https://gridialhub.com/
+  },
+};
 
 export default function Home() {
   // Tomamos los 4 artículos más recientes, ordenados por fecha descendente
@@ -23,8 +32,8 @@ export default function Home() {
           style={{
             display: "flex",
             flexDirection: "column",
-            alignItems: "center", // centrado horizontal
-            textAlign: "center", // centrado del texto
+            alignItems: "center",
+            textAlign: "center",
             gap: 24,
             padding: 60,
             maxWidth: 900,
@@ -81,18 +90,16 @@ export default function Home() {
         {/* GRID DE ARTÍCULOS */}
         <div className="post-grid" style={{ marginTop: 14 }}>
           {latestPosts.map((post) => {
-            // Usamos directamente la imagen definida en app/articulos/posts.js
             const cover = post.image || null;
 
             return (
               <Link
                 key={post.slug}
-                href={post.href} // usamos el href del post para no depender del formato del slug
+                href={post.href}
                 className="clickable-card-link"
                 style={{ textDecoration: "none", color: "inherit" }}
               >
                 <article className="post-card clickable-card">
-                  {/* MINIATURA DEL ARTÍCULO */}
                   <div
                     className={`post-thumb ${
                       cover ? "with-img" : "thumb-game"
@@ -108,7 +115,6 @@ export default function Home() {
                     }
                   />
 
-                  {/* CONTENIDO */}
                   <div className="post-body">
                     <h4 style={{ marginBottom: 4 }}>{post.title}</h4>
 
