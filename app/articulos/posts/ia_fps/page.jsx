@@ -1,10 +1,13 @@
-// app/articulos/ia-fps/page.jsx
+// app/articulos/posts/ia_fps/page.jsx
 
 export const metadata = {
   title:
     "Cómo la IA está optimizando tus FPS en tiempo real: el salto que da tu PC gamer | GridialHub",
   description:
     "La inteligencia artificial ya está dentro de tu GPU, tus drivers y tu sistema para darte más FPS, mejor calidad visual y menos lag. Te explico cómo funciona y cómo aprovecharla.",
+  alternates: {
+    canonical: "/articulos/posts/ia_fps",
+  },
 };
 
 export default function IaFpsPage() {
@@ -27,7 +30,7 @@ export default function IaFpsPage() {
           alt="Tarjeta gráfica con elementos de inteligencia artificial mejorando los FPS"
           style={{
             width: "100%",
-            height: "auto",       // 👈 esto hace que se vea completa
+            height: "auto", // 👈 esto hace que se vea completa
             display: "block",
           }}
         />
