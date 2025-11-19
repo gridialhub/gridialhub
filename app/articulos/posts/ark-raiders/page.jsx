@@ -1,12 +1,16 @@
-// app/articulos/ark-raiders/page.jsx
+// app/articulos/posts/ark-raiders/page.js
 
 export const metadata = {
-  title: "ARK Raiders: cómo la IA está llevando el gameplay a otro nivel | GridialHub",
+  title:
+    "ARC Raiders: cómo la IA está llevando el gameplay a otro nivel | GridialHub",
   description:
-    "ARK Raiders combina acción cooperativa con inteligencia artificial avanzada para crear enfrentamientos dinámicos, impredecibles y desafiantes.",
+    "ARC Raiders combina acción cooperativa con inteligencia artificial avanzada para crear enfrentamientos dinámicos, impredecibles y desafiantes.",
+  alternates: {
+    canonical: "/articulos/posts/ark-raiders", // coincide con href de posts.js
+  },
 };
 
-export default function ArkRaidersPage() {
+export default function ArcRaidersPage() {
   return (
     <article
       className="card"
@@ -23,22 +27,22 @@ export default function ArkRaidersPage() {
       >
         <img
           src="/articulos/banner_arkraiders_1600x600.png"
-          alt="Banner de ARK Raiders"
+          alt="Banner de ARC Raiders"
           style={{ width: "100%", objectFit: "cover", display: "block" }}
         />
       </div>
 
       {/* Encabezado */}
       <header style={{ marginBottom: 8 }}>
-        <h1>ARK Raiders: cómo la IA está llevando el gameplay a otro nivel</h1>
+        <h1>ARC Raiders: cómo la IA está llevando el gameplay a otro nivel</h1>
         <p className="meta">
-          {new Date("2025-11-12").toLocaleDateString("es-VE")}
+          {new Date("2025-11-14").toLocaleDateString("es-VE")}
         </p>
 
         <div
           style={{ display: "flex", gap: 8, flexWrap: "wrap", marginTop: 8 }}
         >
-          <span className="badge">ARK Raiders</span>
+          <span className="badge">ARC Raiders</span>
           <span className="badge">IA</span>
           <span className="badge">gaming</span>
           <span className="badge">cooperativo</span>
@@ -49,8 +53,8 @@ export default function ArkRaidersPage() {
       {/* Contenido */}
       <div className="article-content">
         <p>
-          <b>ARK Raiders</b> es uno de esos shooters cooperativos que destacan no
-          solo por su estilo visual retrofuturista, sino por cómo utiliza la{" "}
+          <b>ARC Raiders</b> es uno de esos shooters cooperativos que destacan
+          no solo por su estilo visual retrofuturista, sino por cómo utiliza la{" "}
           <b>inteligencia artificial</b> para crear encuentros dinámicos,
           intensos y poco predecibles.
         </p>
@@ -61,9 +65,9 @@ export default function ArkRaidersPage() {
           coordina ataques y detecta debilidades del escuadrón.
         </p>
 
-                {/* Imagen interna */}
+        {/* Imagen interna */}
         <figure
-          className="article-image ark-mid" // 👈 le añadimos la clase ark-mid
+          className="article-image ark-mid"
           style={{
             margin: "18px 0",
             borderRadius: 14,
@@ -73,8 +77,7 @@ export default function ArkRaidersPage() {
         >
           <img
             src="/articulos/arkraiders_gameplay_mid.png"
-            alt="Gameplay de ARK Raiders"
-            // 👇 quitamos el objectFit: "cover" para no pelear con el CSS específico
+            alt="Gameplay de ARC Raiders"
             style={{ width: "100%", display: "block" }}
           />
         </figure>
@@ -87,7 +90,7 @@ export default function ArkRaidersPage() {
         </p>
 
         <p>
-          Las máquinas ARK más grandes incluso llaman refuerzos y cambian su
+          Las máquinas ARC más grandes incluso llaman refuerzos y cambian su
           comportamiento dependiendo de la cobertura que uses.
         </p>
 
@@ -107,7 +110,7 @@ export default function ArkRaidersPage() {
 
         <h3>Conclusión</h3>
         <p>
-          ARK Raiders demuestra el potencial de la IA en shooters cooperativos.
+          ARC Raiders demuestra el potencial de la IA en shooters cooperativos.
           No solo se trata de gráficos: es la inteligencia artificial la que
           hace que cada partida sea intensa, distinta y memorable.
         </p>
