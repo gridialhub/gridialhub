@@ -1,6 +1,15 @@
-"use client";
+// app/resultados/page.jsx
 
 import Link from "next/link";
+
+export const metadata = {
+  title: "Resultados de sorteos | GridialHub",
+  description:
+    "Consulta los resultados oficiales de los sorteos realizados en GridialHub, con ganadores y premios detallados.",
+  alternates: {
+    canonical: "/resultados",
+  },
+};
 
 const SORTEOS = [
   {
@@ -14,11 +23,9 @@ const SORTEOS = [
       { nombre: "aun sin publicar", premio: "$40 en tarjeta de regalo" },
       { nombre: "aun sin publicar", premio: "$40 en tarjeta de regalo" },
     ],
-    // opcional: mini imagen/cover (puedes cambiarla por una tuya)
     cover:
       "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='400'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23933eea'/%3E%3Cstop offset='1' stop-color='%23e879f9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='%23131318' width='100%25' height='100%25'/%3E%3Ccircle cx='120' cy='90' r='60' fill='url(%23g)' opacity='.45'/%3E%3Ccircle cx='320' cy='140' r='80' fill='url(%23g)' opacity='.28'/%3E%3Ccircle cx='520' cy='60' r='50' fill='url(%23g)' opacity='.35'/%3E%3C/svg%3E",
   },
-  // Agrega más fichas duplicando este objeto ↑ y cambiando datos
 ];
 
 export default function Resultados() {
@@ -45,22 +52,12 @@ export default function Resultados() {
         {SORTEOS.map((s) => (
           <article
             key={s.slug}
-            className="card ficha-resultado"
+            className="card ficha-resultado clickable-card"
             style={{
               overflow: "hidden",
               display: "grid",
               gridTemplateRows: "110px auto",
               borderRadius: 14,
-              transition: "transform .2s ease, box-shadow .25s ease",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = "translateY(-3px)";
-              e.currentTarget.style.boxShadow =
-                "0 8px 18px color-mix(in oklab, var(--brand), transparent 80%)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = "translateY(0)";
-              e.currentTarget.style.boxShadow = "none";
             }}
           >
             {/* mini cover */}
@@ -93,7 +90,8 @@ export default function Resultados() {
                   display: "grid",
                   gap: 6,
                   padding: 8,
-                  background: "color-mix(in oklab, var(--card), transparent 10%)",
+                  background:
+                    "color-mix(in oklab, var(--card), transparent 10%)",
                   border: "1px solid var(--border)",
                   borderRadius: 10,
                 }}
@@ -148,4 +146,3 @@ export default function Resultados() {
     </div>
   );
 }
-
