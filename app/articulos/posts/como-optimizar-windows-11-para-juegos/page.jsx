@@ -5,6 +5,9 @@ export const metadata = {
     "Cómo optimizar Windows 11 para juegos en 2025 sin romper tu PC | GridialHub",
   description:
     "Guía práctica para optimizar Windows 11 para juegos en 2025: ajustes clave para más FPS y menos stuttering sin arruinar tu sistema.",
+  alternates: {
+    canonical: "/articulos/posts/como-optimizar-windows-11-para-juegos",
+  },
 };
 
 export default function OptimizarWindows11Page() {
@@ -237,7 +240,7 @@ export default function OptimizarWindows11Page() {
           Puedes forzar que use la GPU dedicada en:
           <br />
           <i>
-            Configuración → Sistema → Pantalla → Gráficos → Buscar el juego →
+            Configuración → Sistema → Pantalla → Gráficos → Buscar el juego →{" "}
             Opciones → GPU de alto rendimiento
           </i>
         </p>
@@ -500,4 +503,3 @@ export default function OptimizarWindows11Page() {
     </article>
   );
 }
-
