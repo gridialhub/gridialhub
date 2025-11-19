@@ -665,3 +665,12 @@ a, button {
   height: auto;        /* respeta la proporción original */
   object-fit: contain; /* muestra toda la imagen completa, sin recortar */
 }
+.ficha-resultado {
+  transition: transform 0.2s ease, box-shadow 0.25s ease;
+}
+
+.ficha-resultado:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px color-mix(in oklab, var(--brand-glow), #000 70%);
+}
+
