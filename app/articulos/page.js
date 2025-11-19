@@ -2,7 +2,22 @@
 import Link from "next/link";
 import { posts } from "./posts";
 
+// 🔹 METADATA PARA SEO Y CANONICAL
+export const metadata = {
+  title: "Artículos sobre gaming y tecnología | GridialHub",
+  description:
+    "Explora todos los artículos publicados en GridialHub sobre gaming, creación de contenido, hardware y tecnología.",
+  alternates: {
+    canonical: "/articulos", // → https://gridialhub.com/articulos
+  },
+};
+
 export default function ArticulosPage() {
+  // Ordenamos por fecha descendente para que salgan los más nuevos primero
+  const sortedPosts = [...posts].sort(
+    (a, b) => new Date(b.date) - new Date(a.date)
+  );
+
   return (
     <main className="container page-fade">
       <h1
@@ -19,7 +34,7 @@ export default function ArticulosPage() {
         <h2 style={{ marginBottom: 8 }}>Últimos artículos</h2>
 
         <div className="post-grid">
-          {posts.map((post) => (
+          {sortedPosts.map((post) => (
             <Link
               key={post.slug}
               href={post.href}
