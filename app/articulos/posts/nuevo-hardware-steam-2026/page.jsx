@@ -5,6 +5,9 @@ export const metadata = {
     "El nuevo hardware de Steam que llega en 2026: Steam Machine, Steam Frame y Steam Controller | GridialHub",
   description:
     "Repaso completo al nuevo hardware de Steam que llega en 2026: Steam Machine, Steam Frame y la segunda generación del Steam Controller, y qué significan para los jugadores de PC.",
+  alternates: {
+    canonical: "/articulos/posts/nuevo-hardware-steam-2026",
+  },
 };
 
 export default function NuevoHardwareSteam2026Page() {
@@ -373,4 +376,3 @@ export default function NuevoHardwareSteam2026Page() {
     </article>
   );
 }
-
