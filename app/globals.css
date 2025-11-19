@@ -387,6 +387,25 @@ nav a.active { opacity: 1; text-decoration: underline; }
 .social-facebook:hover { background: color-mix(in oklab, #1877f2, var(--card) 82%); }
 .social-kick:hover     { background: color-mix(in oklab, #52ff00, var(--card) 86%); }
 
+/* --- Iconos circulares de redes en /sorteos --- */
+.social-icon {
+  transition:
+    all 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.2s ease,
+    filter 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.18);
+  box-shadow: 0 0 12px currentColor;
+  filter: brightness(1.15);
+}
+
+.social-icon:active {
+  transform: scale(0.96);
+}
+
 /* Bases: pequeños ajustes visuales */
 #eligibilidad ul,
 #premios ul,
@@ -549,11 +568,6 @@ a, button {
   pointer-events: none; /* evita clics durante salida */
 }
 
-@keyframes pageFadeIn {
-  from { opacity: 0; transform: translateY(8px); filter: saturate(0.92); }
-  to   { opacity: 1; transform: none;             filter: saturate(1); }
-}
-
 @keyframes pageFadeOut {
   from { opacity: 1; transform: none;             filter: saturate(1); }
   to   { opacity: 0; transform: translateY(6px);  filter: saturate(0.9); }
@@ -651,18 +665,3 @@ a, button {
   height: auto;        /* respeta la proporción original */
   object-fit: contain; /* muestra toda la imagen completa, sin recortar */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
