@@ -1,16 +1,7 @@
 // app/page.jsx
+
 import Link from "next/link";
 import { posts } from "./articulos/posts";
-
-// 🔹 METADATA PARA SEO Y CANONICAL
-export const metadata = {
-  title: "GridialHub | Gaming, sorteos y tecnología",
-  description:
-    "GridialHub es un espacio para gamers y creadores de contenido: guías, novedades, análisis y sorteos para mejorar tu experiencia de juego.",
-  alternates: {
-    canonical: "/", // con metadataBase en layout → https://gridialhub.com/
-  },
-};
 
 export default function Home() {
   // Tomamos los 4 artículos más recientes, ordenados por fecha descendente
@@ -41,23 +32,24 @@ export default function Home() {
           }}
         >
           <h1 style={{ fontSize: "clamp(28px, 4vw, 40px)", margin: 0 }}>
-            Bienvenido a GridialHub
+            Bienvenido a GridialHub: tu punto de encuentro gamer
           </h1>
 
           <p
             className="intro-text"
             style={{ fontSize: 18, lineHeight: 1.6, maxWidth: 720 }}
           >
-            GridialHub es un espacio creado para gamers, creadores de contenido
-            y amantes de la tecnología. Aquí encontrarás artículos, guías,
-            novedades, noticias, análisis y sorteos pensados para ayudarte a
-            mejorar tu experiencia de juego y mantenerte al día con lo último en
-            el mundo gaming.
+            GridialHub es una web pensada para gamers y creadores de contenido
+            que quieren exprimir su PC al máximo sin complicarse. Aquí
+            encontrarás guías claras, análisis de hardware, trucos de
+            rendimiento, configuraciones para streaming y sorteos pensados para
+            devolver un poco de todo el apoyo que recibo en directo.
             <br />
             <br />
-            Nuestro objetivo es construir una comunidad donde cada visita aporte
-            valor: información clara, contenido útil y un ambiente donde todos
-            puedan participar, aprender y crecer.
+            Mi objetivo es construir una comunidad donde cada visita te deje
+            algo útil: más FPS, mejores decisiones al comprar componentes, ideas
+            para tu contenido y oportunidades reales de ganar premios mientras
+            disfrutamos de los juegos que nos gustan.
           </p>
 
           <Link
@@ -65,7 +57,7 @@ export default function Home() {
             className="btn"
             style={{ fontSize: 18, padding: "12px 28px", borderRadius: 12 }}
           >
-            Participar en sorteos
+            Ver cómo participar en los sorteos
           </Link>
         </div>
       </section>
@@ -100,6 +92,7 @@ export default function Home() {
                 style={{ textDecoration: "none", color: "inherit" }}
               >
                 <article className="post-card clickable-card">
+                  {/* MINIATURA DEL ARTÍCULO */}
                   <div
                     className={`post-thumb ${
                       cover ? "with-img" : "thumb-game"
@@ -115,6 +108,7 @@ export default function Home() {
                     }
                   />
 
+                  {/* CONTENIDO */}
                   <div className="post-body">
                     <h4 style={{ marginBottom: 4 }}>{post.title}</h4>
 
