@@ -41,7 +41,7 @@ export default function BitrateObs2026Page() {
           Qué bitrate usar en OBS para TikTok, Twitch y YouTube en 2026
         </h1>
         <p className="meta">
-          {new Date("2026-02-01").toLocaleDateString("es-VE")} • 9 min de
+          {new Date("2025-11-23").toLocaleDateString("es-VE")} • 9 min de
           lectura
         </p>
 
