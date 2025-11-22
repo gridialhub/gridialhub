@@ -4,9 +4,9 @@ export const posts = [
   {
   slug: "posts/configuracion-obs-stream-grabacion",
   title: "Configuración de OBS en 2026 para stream y grabación sin perder FPS",
-  date: "2026-01-10", // usa la fecha que quieras en formato ISO
+  date: "2025-11-21", // usa la fecha que quieras en formato ISO
   readingTime: "10 min de lectura",
-  meta: "10 de enero de 2026 · 10 min de lectura",
+  meta: "21 de noviembre de 2025 · 10 min de lectura",
   excerpt:
     "Guía paso a paso para configurar OBS en 2026 para streaming y grabación con buena calidad sin matar los FPS de tus juegos.",
   href: "/articulos/posts/configuracion-obs-stream-grabacion",
