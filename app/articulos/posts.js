@@ -4,9 +4,9 @@ export const posts = [
  {
   slug: "posts/mejor-configuracion-helldivers-2-2026",
   title: "Mejor configuración de Helldivers 2 en PC en 2026: más FPS y mejor puntería",
-  date: "2026-01-18", // puedes cambiar la fecha si quieres
+  date: "2025-11-22", // puedes cambiar la fecha si quieres
   readingTime: "9 min de lectura",
-  meta: "18 de enero de 2026 · 9 min de lectura",
+  meta: "22 de noviembre de 2025 · 9 min de lectura",
   excerpt:
     "Te dejo una configuración recomendada de gráficos y controles para Helldivers 2 en PC en 2026: más FPS, mejor visibilidad y una puntería más cómoda sin perder calidad.",
   href: "/articulos/posts/mejor-configuracion-helldivers-2-2026",
