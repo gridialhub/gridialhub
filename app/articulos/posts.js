@@ -1,6 +1,19 @@
 // app/articulos/posts.js
 export const posts = [
  
+ {
+  slug: "posts/mejor-configuracion-helldivers-2-2026",
+  title: "Mejor configuración de Helldivers 2 en PC en 2026: más FPS y mejor puntería",
+  date: "2026-01-18", // puedes cambiar la fecha si quieres
+  readingTime: "9 min de lectura",
+  meta: "18 de enero de 2026 · 9 min de lectura",
+  excerpt:
+    "Te dejo una configuración recomendada de gráficos y controles para Helldivers 2 en PC en 2026: más FPS, mejor visibilidad y una puntería más cómoda sin perder calidad.",
+  href: "/articulos/posts/mejor-configuracion-helldivers-2-2026",
+  image: "/articulos/banner-helldivers2-2026.png", // cuando tengas el banner, guárdalo con este nombre
+  thumbClass: "thumb-game",
+  tags: ["Helldivers 2", "FPS", "Controles", "PC gamer"],
+},
   {
   slug: "posts/configuracion-obs-stream-grabacion",
   title: "Configuración de OBS en 2026 para stream y grabación sin perder FPS",
