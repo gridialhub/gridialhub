@@ -42,7 +42,7 @@ export default function MejorConfigHelldivers2Page() {
           puntería
         </h1>
         <p className="meta">
-          {new Date("2026-01-18").toLocaleDateString("es-VE")} • 9 min de
+          {new Date("2025-11-22").toLocaleDateString("es-VE")} • 9 min de
           lectura
         </p>
 
