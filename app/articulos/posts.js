@@ -1,6 +1,6 @@
 // app/articulos/posts.js
 export const posts = [
-  
+ 
   {
   slug: "posts/configuracion-obs-stream-grabacion",
   title: "Configuración de OBS en 2026 para stream y grabación sin perder FPS",
