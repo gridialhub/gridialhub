@@ -16,13 +16,13 @@ export const metadata = {
     title: "GridialHub — Comunidad & Sorteos Gaming",
     description:
       "Sorteos transparentes, artículos, tecnología y comunidad gamer global.",
-    url: "/",              // usa metadataBase como base
+    url: "/", // usa metadataBase como base
     siteName: "GridialHub",
     locale: "es_ES",
     type: "website",
     images: [
       {
-        url: "/gridialhub-og.png",  // 👈 banner que hicimos (1200x630)
+        url: "/gridialhub-og.png", // banner OG (1200x630)
         width: 1200,
         height: 630,
         alt: "GridialHub — comunidad gamer, artículos y sorteos",
@@ -34,11 +34,16 @@ export const metadata = {
     title: "GridialHub — Comunidad & Sorteos Gaming",
     description:
       "Artículos de gaming, hardware y sorteos para la comunidad de Gridial.",
-    images: ["/gridialhub-og.png"], // 👈 mismo banner para Twitter/X
+    images: ["/gridialhub-og.png"],
   },
   icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    // favicon para navegadores
+    icon: [
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/gridialhub-icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    // icono para iOS / PWA
+    apple: "/gridialhub-icon-180.png",
   },
 };
 
