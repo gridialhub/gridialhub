@@ -1,6 +1,19 @@
 // app/articulos/posts.js
 export const posts = [
- 
+
+ {
+  slug: "posts/que-bitrate-usar-obs-tiktok-twitch-youtube-2026",
+  title: "Qué bitrate usar en OBS para TikTok, Twitch y YouTube en 2026",
+  date: "2025-11-23",
+  readingTime: "9 min de lectura",
+  meta: "23 de noviembre de 2025 · 9 min de lectura",
+  excerpt:
+    "Te explico qué bitrate usar en OBS para TikTok, Twitch y YouTube en 2026 según tu velocidad de subida, resolución y FPS, sin reventar tu conexión ni tu stream.",
+  href: "/articulos/posts/que-bitrate-usar-obs-tiktok-twitch-youtube-2026",
+  image: "/articulos/banner-bitrate-obs-2026.png",
+  thumbClass: "thumb-pc",
+  tags: ["OBS", "Bitrate", "Streaming", "TikTok", "Twitch", "YouTube"],
+},
  {
   slug: "posts/mejor-configuracion-helldivers-2-2026",
   title: "Mejor configuración de Helldivers 2 en PC en 2026: más FPS y mejor puntería",
