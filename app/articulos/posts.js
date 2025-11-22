@@ -10,7 +10,7 @@ export const posts = [
   excerpt:
     "Te dejo una configuración recomendada de gráficos y controles para Helldivers 2 en PC en 2026: más FPS, mejor visibilidad y una puntería más cómoda sin perder calidad.",
   href: "/articulos/posts/mejor-configuracion-helldivers-2-2026",
-  image: "/articulos/banner-helldivers2-2026.png", // cuando tengas el banner, guárdalo con este nombre
+  image: "/articulos/banner-helldivers2-config-fps-controles.png", // cuando tengas el banner, guárdalo con este nombre
   thumbClass: "thumb-game",
   tags: ["Helldivers 2", "FPS", "Controles", "PC gamer"],
 },
