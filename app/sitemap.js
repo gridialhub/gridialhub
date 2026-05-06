@@ -39,6 +39,12 @@ export default function sitemap() {
       priority: 0.6,
     },
     {
+      url: `${baseUrl}/terminos`,
+      lastModified,
+      changeFrequency: "yearly",
+      priority: 0.4,
+    },
+    {
       url: `${baseUrl}/contacto`,
       lastModified,
       changeFrequency: "monthly",
@@ -46,9 +52,9 @@ export default function sitemap() {
     },
   ];
 
-  // Rutas de artículos (usamos el href de app/articulos/posts.js)
+  // Rutas de artículos desde app/articulos/posts.js
   const articleRoutes = posts.map((post) => ({
-    url: `${baseUrl}${post.href}`, // ej: /articulos/posts/ia_fps
+    url: `${baseUrl}${post.href}`,
     lastModified,
     changeFrequency: "weekly",
     priority: 0.8,
