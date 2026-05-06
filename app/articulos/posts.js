@@ -96,7 +96,7 @@ export const posts = [
   },
   {
     slug: "posts/que-grafica-comprar-sin-botar-la-plata",
-    title: "Qué tarjeta gráfica comprar en 2025 sin botar la plata",
+    title: "Qué tarjeta gráfica comprar en 2026 sin botar la plata",
     date: "2025-11-14",
     readingTime: "8 min de lectura",
     meta: "14 de noviembre de 2025 · 8 min de lectura",
