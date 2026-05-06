@@ -2,11 +2,38 @@
 
 export const metadata = {
   title:
-    "Qué tarjeta gráfica comprar en 2025 sin botar la plata | Guía para gamers | GridialHub",
+    "Qué tarjeta gráfica comprar en 2026 sin botar la plata | Guía para gamers | GridialHub",
   description:
-    "Te explico cómo elegir la mejor tarjeta gráfica según tu presupuesto, tipo de juegos y monitor, evitando el sobreprecio y el marketing vacío.",
+    "Te explico cómo elegir la mejor tarjeta gráfica en 2026 según tu presupuesto, tipo de juegos y monitor, evitando el sobreprecio y el marketing vacío.",
   alternates: {
-    canonical: "/articulos/posts/que-grafica-comprar-sin-botar-la-plata",
+    canonical:
+      "https://gridialhub.com/articulos/posts/que-grafica-comprar-sin-botar-la-plata",
+  },
+  openGraph: {
+    title:
+      "Qué tarjeta gráfica comprar en 2026 sin botar la plata | GridialHub",
+    description:
+      "Guía clara para elegir una GPU según tu monitor, tus juegos y tu presupuesto sin dejarte llevar por el marketing.",
+    url: "https://gridialhub.com/articulos/posts/que-grafica-comprar-sin-botar-la-plata",
+    siteName: "GridialHub",
+    type: "article",
+    locale: "es_ES",
+    images: [
+      {
+        url: "https://gridialhub.com/articulos/duda-sobre-tarjeta.png",
+        width: 1200,
+        height: 630,
+        alt: "Persona con dudas sobre qué tarjeta gráfica comprar para su PC gamer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Qué tarjeta gráfica comprar en 2026 sin botar la plata | GridialHub",
+    description:
+      "Aprende a elegir una GPU según tu monitor, juegos y presupuesto sin pagar de más.",
+    images: ["https://gridialhub.com/articulos/duda-sobre-tarjeta.png"],
   },
 };
 
@@ -24,10 +51,6 @@ export default function QueGraficaComprarPage() {
           overflow: "hidden",
         }}
       >
-        {/* 
-          Banner real del artículo:
-          public/articulos/duda-sobre-tarjeta.png
-        */}
         <img
           src="/articulos/duda-sobre-tarjeta.png"
           alt="Persona con dudas sobre qué tarjeta gráfica comprar para su PC gamer"
@@ -38,10 +61,10 @@ export default function QueGraficaComprarPage() {
       {/* Encabezado */}
       <header style={{ marginBottom: 8 }}>
         <h1 style={{ marginBottom: 8 }}>
-          Qué tarjeta gráfica comprar en 2025 sin botar la plata
+          Qué tarjeta gráfica comprar en 2026 sin botar la plata
         </h1>
         <p className="meta">
-          {new Date("2025-11-14").toLocaleDateString("es-VE")} • 8 min de
+          {new Date("2026-05-06").toLocaleDateString("es-VE")} • 8 min de
           lectura
         </p>
 
@@ -87,7 +110,7 @@ export default function QueGraficaComprarPage() {
           </li>
           <li>
             <b>1080p • 144–240 Hz:</b> aquí sí tiene sentido una GPU más fuerte
-            si juegas competitivos (Fortnite, Warzone, Valorant, etc.).
+            si juegas competitivos como Fortnite, Warzone, Valorant o CS2.
           </li>
           <li>
             <b>1440p (2K):</b> el punto dulce actual para calidad + FPS, pero
@@ -95,7 +118,7 @@ export default function QueGraficaComprarPage() {
           </li>
           <li>
             <b>4K:</b> esto ya es territorio de gama alta. Si no tienes un
-            monitor 4K, ni lo pienses.
+            monitor 4K, no tiene sentido comprar pensando solo en esa resolución.
           </li>
         </ul>
 
@@ -115,9 +138,6 @@ export default function QueGraficaComprarPage() {
             border: "1px solid var(--border)",
           }}
         >
-          {/* Imagen real a mitad del artículo:
-              public/articulos/Firefly-jugando.png
-          */}
           <img
             src="/articulos/Firefly-jugando.png"
             alt="Jugador probando rendimiento de su tarjeta gráfica en un juego"
@@ -135,15 +155,17 @@ export default function QueGraficaComprarPage() {
         <ul>
           <li>
             <b>Competitivos ligeros:</b> Valorant, League of Legends, CS2. No
-            son tan pesados; priorizan FPS altos, pero no exigen graficazos.
+            son tan pesados; priorizan FPS altos, pero no exigen gráficos al
+            máximo.
           </li>
           <li>
-            <b>AAA modernos:</b> Cyberpunk 2077, Starfield, Horizon, etc. Aquí
-            sí se sufre: mucha carga gráfica, ray tracing, mundos abiertos.
+            <b>AAA modernos:</b> Cyberpunk 2077, Starfield, Horizon, Alan Wake
+            2, etc. Aquí sí importa mucho la potencia gráfica, la VRAM y las
+            tecnologías de escalado.
           </li>
           <li>
             <b>Indies o juegos retro:</b> la mayoría corre bien casi en
-            cualquier cosa decente.
+            cualquier PC decente.
           </li>
         </ul>
 
@@ -154,7 +176,9 @@ export default function QueGraficaComprarPage() {
           ahí sí conviene subir el nivel de la tarjeta.
         </p>
 
-        <h3>Regla #3: cuidado con la “gama alta barata” de generaciones viejas</h3>
+        <h3>
+          Regla #3: cuidado con la “gama alta barata” de generaciones viejas
+        </h3>
         <p>
           Algo muy común es ver ofertas de GPUs antiguas que en su momento eran
           “gama alta”, pero que hoy:
@@ -164,8 +188,8 @@ export default function QueGraficaComprarPage() {
           <li>Consumen mucha energía.</li>
           <li>Se calientan más.</li>
           <li>
-            Rinden parecido a una gama media nueva, pero sin tecnologías
-            modernas (decoders de video, DLSS/FSR nuevos, etc.).
+            Pueden rendir parecido a una gama media nueva, pero sin tecnologías
+            modernas de escalado, codificación de video o eficiencia.
           </li>
         </ul>
 
@@ -185,38 +209,36 @@ export default function QueGraficaComprarPage() {
 
         <ul>
           <li>
-            Verifica siempre el <b>consumo recomendado</b> de la GPU (TDP +
-            PSU recomendada).
+            Verifica siempre el <b>consumo recomendado</b> de la GPU y la fuente
+            sugerida por el fabricante.
           </li>
           <li>
             Asegúrate de tener una <b>fuente 80 Plus</b> de marca decente, con
             los conectores PCIe necesarios.
           </li>
           <li>
-            Si tu CPU es muy viejo, es posible que tengas{" "}
+            Si tu CPU es muy viejo, puedes tener{" "}
             <b>cuello de botella</b> en ciertos juegos, sobre todo shooters
             competitivos.
           </li>
         </ul>
 
         <h3>Cómo comparar sin volverte loco</h3>
-        <p>
-          Cuando dudes entre dos modelos, haz esto:
-        </p>
+        <p>Cuando dudes entre dos modelos, haz esto:</p>
 
         <ol>
           <li>
             Busca <b>benchmarks específicos del juego que más te importa</b>{" "}
-            (por ejemplo: “Helldivers 2 RTX 4060 vs RX 7700 XT 1080p”).
+            usando la resolución real de tu monitor.
           </li>
           <li>
             Fíjate en el <b>promedio de FPS</b>, pero también en los{" "}
-            <b>1% lows</b> (los bajones). Un promedio alto con bajones feos se
-            siente peor que un promedio más bajo pero estable.
+            <b>1% lows</b>. Un promedio alto con bajones feos se siente peor que
+            un promedio menor pero estable.
           </li>
           <li>
             Compara <b>precio local real</b> en la tienda donde compras tú, no
-            solo precios de USA o de YouTube.
+            solo precios de YouTube o de otros países.
           </li>
         </ol>
 
@@ -233,7 +255,7 @@ export default function QueGraficaComprarPage() {
           </li>
           <li>
             Haces también <b>edición de video, render o IA</b> y necesitas más
-            VRAM y Cuda Cores / Compute Units.
+            VRAM, mejor codificador o más potencia de cómputo.
           </li>
         </ul>
 
@@ -247,37 +269,32 @@ export default function QueGraficaComprarPage() {
         <h3>Errores típicos que hacen botar la plata</h3>
         <ul>
           <li>
-            Comprar solo por el <b>nombre</b> (“es que dice 80, debe ser mejor
-            que la 70 de antes”).
+            Comprar solo por el <b>nombre</b> del modelo sin mirar benchmarks
+            reales.
           </li>
           <li>
-            Ignorar la <b>VRAM</b> en 2025: para juegos modernos en 1440p, menos
-            de 8 GB se empieza a quedar corto.
+            Ignorar la <b>VRAM</b>: para juegos modernos en 1440p, menos de 8 GB
+            ya empieza a quedarse justo en varios casos.
           </li>
           <li>
-            Pagar sobreprecio brutal por una mínima mejora de rendimiento
-            (ejemplo: 10% más FPS por 40% más dinero).
+            Pagar sobreprecio brutal por una mínima mejora de rendimiento.
           </li>
           <li>
-            No revisar las <b>dimensiones físicas</b> de la GPU: luego no cabe
-            en el case.
+            No revisar las <b>dimensiones físicas</b> de la GPU y descubrir
+            tarde que no cabe en el case.
           </li>
         </ul>
 
         <h3>Guía rápida mental antes de comprar</h3>
-        <p>
-          Antes de sacar la tarjeta, respóndete esto:
-        </p>
+        <p>Antes de sacar la tarjeta, respóndete esto:</p>
 
         <ol>
           <li>¿Qué resolución y Hz tiene mi monitor?</li>
           <li>¿Qué tipo de juegos son mi prioridad?</li>
-          <li>
-            ¿Mi fuente de poder soporta esta GPU sin dramas y con margen?
-          </li>
+          <li>¿Mi fuente de poder soporta esta GPU con margen?</li>
           <li>¿Mi CPU la acompaña o voy a tener cuello de botella?</li>
           <li>
-            ¿He visto benchmarks de ESTA GPU en ESTE juego a ESTA resolución?
+            ¿He visto benchmarks de esta GPU en este juego a esta resolución?
           </li>
         </ol>
 
@@ -302,8 +319,8 @@ export default function QueGraficaComprarPage() {
         </p>
 
         <p>
-          Más adelante puedo hacer guías más específicas por rango de precio
-          (bajo, medio y alto) con ejemplos concretos de modelos. Pero con este
+          Más adelante puedes hacer guías más específicas por rango de precio
+          bajo, medio y alto con ejemplos concretos de modelos. Pero con este
           artículo ya tienes la base para <b>no dejarte engañar</b> cuando toque
           renovar la GPU.
         </p>
