@@ -13,6 +13,25 @@ export default function Dlss45VsFsrRedstone2026Page() {
     <article
       className="card article-page"
       style={{ padding: 20, borderRadius: 16, display: "grid", gap: 16 }}
+      >
+      {/* Banner superior */}
+<div
+  style={{
+    marginBottom: 4,
+    borderRadius: 14,
+    overflow: "hidden",
+  }}
+>
+  <img
+    src="/articulos/banner-dlss-4-5-vs-fsr-redstone-2026.png"
+    alt="Comparativa entre DLSS 4.5 y AMD FSR Redstone en 2026"
+    style={{
+      width: "100%",
+      height: "auto",
+      display: "block",
+    }}
+  />
+</div>
     >
       <header style={{ marginBottom: 8 }}>
         <h1 style={{ marginBottom: 8 }}>
