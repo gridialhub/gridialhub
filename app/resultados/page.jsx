@@ -3,9 +3,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Resultados de sorteos | GridialHub",
+  title: "Resultados de sorteos",
   description:
-    "Consulta los resultados oficiales de los sorteos realizados en GridialHub, con ganadores y premios detallados.",
+    "Consulta los resultados y premios de los sorteos realizados en GridialHub. Los nombres de los ganadores se publican cuando están confirmados.",
   alternates: {
     canonical: "/resultados",
   },
@@ -15,12 +15,12 @@ const SORTEOS = [
   {
     slug: "navidad-2025",
     titulo: "Sorteo Navidad 2025",
-    fecha: "15 de diciembre de 2025",
+    fecha: "20 de diciembre de 2025",
     ganadores: [
-      { nombre: "aun sin publicar", premio: "$40 en tarjeta de regalo" },
-      { nombre: "aun sin publicar", premio: "$40 en tarjeta de regalo" },
-      { nombre: "aun sin publicar", premio: "$40 en tarjeta de regalo" },
-     ],
+      { nombre: "Pendiente de publicar", premio: "$100" },
+      { nombre: "Pendiente de publicar", premio: "$50" },
+      { nombre: "Pendiente de publicar", premio: "$50" },
+    ],
     cover:
       "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='400'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23933eea'/%3E%3Cstop offset='1' stop-color='%23e879f9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='%23131318' width='100%25' height='100%25'/%3E%3Ccircle cx='120' cy='90' r='60' fill='url(%23g)' opacity='.45'/%3E%3Ccircle cx='320' cy='140' r='80' fill='url(%23g)' opacity='.28'/%3E%3Ccircle cx='520' cy='60' r='50' fill='url(%23g)' opacity='.35'/%3E%3C/svg%3E",
   },
@@ -28,14 +28,14 @@ const SORTEOS = [
 
 export default function Resultados() {
   return (
-    <div className="container" style={{ display: "grid", gap: 24 }}>
+    <div style={{ display: "grid", gap: 24 }}>
       <header style={{ textAlign: "center", display: "grid", gap: 8 }}>
         <h1 style={{ fontSize: "clamp(26px,3vw,38px)", fontWeight: 900 }}>
           Resultados de Sorteos
         </h1>
         <p className="meta">
-          Fichas oficiales de ganadores. A medida que hagamos nuevos sorteos,
-          los iremos publicando aquí.
+          Aquí se publican los resultados de los sorteos de GridialHub. Los nombres
+          pendientes se añadirán cuando estén confirmados.
         </p>
       </header>
 

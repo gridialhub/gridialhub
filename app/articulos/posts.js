@@ -97,9 +97,9 @@ export const posts = [
   {
     slug: "posts/que-grafica-comprar-sin-botar-la-plata",
     title: "Qué tarjeta gráfica comprar en 2026 sin botar la plata",
-    date: "2025-11-14",
+    date: "2026-05-06",
     readingTime: "8 min de lectura",
-    meta: "14 de noviembre de 2025 · 8 min de lectura",
+    meta: "06 de mayo de 2026 · 8 min de lectura",
     excerpt:
       "Guía clara para elegir la GPU correcta según tu monitor, tus juegos y tu presupuesto, evitando el sobreprecio y el marketing vacío.",
     href: "/articulos/posts/que-grafica-comprar-sin-botar-la-plata",

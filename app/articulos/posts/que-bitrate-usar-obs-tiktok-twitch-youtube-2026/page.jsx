@@ -2,7 +2,7 @@
 
 export const metadata = {
   title:
-    "Qué bitrate usar en OBS para TikTok, Twitch y YouTube en 2026 | GridialHub",
+    "Qué bitrate usar en OBS para TikTok, Twitch y YouTube en 2026",
   description:
     "Guía clara para elegir el bitrate correcto en OBS para TikTok, Twitch y YouTube en 2026 según tu velocidad de subida, resolución y FPS, sin reventar tu conexión ni tu stream.",
   alternates: {
@@ -41,7 +41,7 @@ export default function BitrateObs2026Page() {
           Qué bitrate usar en OBS para TikTok, Twitch y YouTube en 2026
         </h1>
         <p className="meta">
-          {new Date("2025-11-23").toLocaleDateString("es-VE")} • 9 min de
+          {new Date("2025-11-23T00:00:00Z").toLocaleDateString("es-VE", { timeZone: "UTC" })} • 9 min de
           lectura
         </p>
 

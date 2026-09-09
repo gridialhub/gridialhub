@@ -2,7 +2,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Términos y Condiciones | GridialHub",
+  title: "Términos y Condiciones",
   description:
     "Términos y condiciones de uso de GridialHub, incluyendo reglas generales del sitio, contenido, sorteos, privacidad, publicidad y contacto.",
   alternates: {
@@ -27,7 +27,7 @@ export default function Terminos() {
   const ultimaActualizacion = "06 de mayo de 2026";
 
   return (
-    <div className="container" style={{ display: "grid", gap: 28 }}>
+    <div style={{ display: "grid", gap: 28 }}>
       {/* ENCABEZADO */}
       <header
         className="card"

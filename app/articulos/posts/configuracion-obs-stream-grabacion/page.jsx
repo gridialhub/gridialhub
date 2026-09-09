@@ -2,7 +2,7 @@
 
 export const metadata = {
   title:
-    "Configuración de OBS en 2026 para stream y grabación sin perder FPS | GridialHub",
+    "Configuración de OBS en 2026 para stream y grabación sin perder FPS",
   description:
     "Guía paso a paso para configurar OBS en 2026 para streaming y grabación con buena calidad sin matar los FPS de tus juegos.",
   alternates: {
@@ -42,7 +42,7 @@ export default function ConfiguracionObs2026Page() {
           Configuración de OBS en 2026 para stream y grabación sin perder FPS
         </h1>
         <p className="meta">
-          {new Date("2025-11-21").toLocaleDateString("es-VE")} • 10 min de
+          {new Date("2025-11-21T00:00:00Z").toLocaleDateString("es-VE", { timeZone: "UTC" })} • 10 min de
           lectura
         </p>
 

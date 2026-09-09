@@ -2,7 +2,7 @@
 
 export const metadata = {
   title:
-    "Cómo optimizar Windows 11 para juegos en 2025 sin romper tu PC | GridialHub",
+    "Cómo optimizar Windows 11 para juegos en 2025 sin romper tu PC",
   description:
     "Guía práctica para optimizar Windows 11 para juegos en 2025: ajustes clave para más FPS y menos stuttering sin arruinar tu sistema.",
   alternates: {
@@ -41,7 +41,7 @@ export default function OptimizarWindows11Page() {
           Cómo optimizar Windows 11 para juegos en 2025 (sin romper tu PC)
         </h1>
         <p className="meta">
-          {new Date("2025-11-15").toLocaleDateString("es-VE")} • 9 min de
+          {new Date("2025-11-15T00:00:00Z").toLocaleDateString("es-VE", { timeZone: "UTC" })} • 9 min de
           lectura
         </p>
 

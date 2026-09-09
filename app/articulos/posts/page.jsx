@@ -1,2 +1,5 @@
-// app/articulos/posts/page.jsx
-export { default } from '../page';
+import { permanentRedirect } from "next/navigation";
+
+export default function PostsIndexPage() {
+  permanentRedirect("/articulos");
+}

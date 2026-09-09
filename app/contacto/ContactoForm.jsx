@@ -35,7 +35,7 @@ export default function ContactoForm() {
   };
 
   return (
-    <div className="container" style={{ display: "grid", gap: 24 }}>
+    <div style={{ display: "grid", gap: 24 }}>
       <header
         className="card"
         style={{ padding: 24, borderRadius: 16, textAlign: "center" }}
@@ -46,7 +46,7 @@ export default function ContactoForm() {
         <p className="meta">
           ¿Tienes dudas, propuestas o quieres colaborar con GridialHub?
           <br />
-          Puedes escribirme directamente desde este formulario o al correo{" "}
+          Puedes preparar un correo desde este formulario o escribirme directamente al correo{" "}
           <span className="email-link">
             <a href="mailto:contact@gridialhub.com">
               contact@gridialhub.com
@@ -69,8 +69,10 @@ export default function ContactoForm() {
         }}
       >
         <div>
-          <label>Nombre</label>
+          <label htmlFor="contact-name">Nombre</label>
           <input
+            id="contact-name"
+            autoComplete="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="Tu nombre o alias"
@@ -79,9 +81,11 @@ export default function ContactoForm() {
         </div>
 
         <div>
-          <label>Correo electrónico</label>
+          <label htmlFor="contact-email">Correo electrónico</label>
           <input
+            id="contact-email"
             type="email"
+            autoComplete="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="tu@email.com"
@@ -90,8 +94,9 @@ export default function ContactoForm() {
         </div>
 
         <div>
-          <label>Mensaje</label>
+          <label htmlFor="contact-message">Mensaje</label>
           <textarea
+            id="contact-message"
             rows={6}
             value={message}
             onChange={(e) => setMessage(e.target.value)}
@@ -101,7 +106,7 @@ export default function ContactoForm() {
         </div>
 
         <button className="btn" type="submit" disabled={loading}>
-          {loading ? "Enviando..." : "Enviar mensaje"}
+          {loading ? "Abriendo correo..." : "Preparar correo"}
         </button>
 
         {ok && (

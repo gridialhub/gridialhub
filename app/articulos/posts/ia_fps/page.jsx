@@ -2,7 +2,7 @@
 
 export const metadata = {
   title:
-    "Cómo la IA está optimizando tus FPS en tiempo real: el salto que da tu PC gamer | GridialHub",
+    "Cómo la IA está optimizando tus FPS en tiempo real: el salto que da tu PC gamer",
   description:
     "La inteligencia artificial ya está dentro de tu GPU, tus drivers y tu sistema para darte más FPS, mejor calidad visual y menos lag. Te explico cómo funciona y cómo aprovecharla.",
   alternates: {
@@ -43,7 +43,7 @@ export default function IaFpsPage() {
           PC gamer
         </h1>
         <p className="meta">
-          {new Date("2025-11-12").toLocaleDateString("es-VE")} • 7 min de
+          {new Date("2025-11-14T00:00:00Z").toLocaleDateString("es-VE", { timeZone: "UTC" })} • 7 min de
           lectura
         </p>
         <div

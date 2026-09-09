@@ -1,5 +1,14 @@
 // app/sorteos/page.jsx
-"use client";
+import Link from "next/link";
+
+export const metadata = {
+  title: "Sorteos",
+  description:
+    "Consulta los sorteos de GridialHub, las reglas de participación, premios, redes oficiales y resultados.",
+  alternates: {
+    canonical: "/sorteos",
+  },
+};
 
 export default function Sorteos() {
   const redes = [
@@ -37,7 +46,7 @@ export default function Sorteos() {
 
   return (
     <div
-      className="container page-fade"
+      className="page-fade"
       style={{
         minHeight: "calc(100vh - 140px)",
         display: "grid",
@@ -80,7 +89,7 @@ export default function Sorteos() {
             color: "var(--muted)",
           }}
         >
-          Sorteo activo • Navidad 2025 • $200 en premios
+          Sorteo finalizado • Navidad 2025 • $200 en premios
         </div>
 
         {/* Título */}
@@ -96,7 +105,7 @@ export default function Sorteos() {
             color: "transparent",
           }}
         >
-          ¡Bienvenidos al primer sorteo de esta Navidad!
+          Sorteo de Navidad 2025 — finalizado
         </h1>
 
         {/* Bloque de texto principal con fondo suave */}
@@ -121,17 +130,18 @@ export default function Sorteos() {
               margin: 0,
             }}
           >
-            Para agradecer todo el apoyo, haré un sorteo especial para la
-            comunidad de <b>$200 repartidos entre 3 ganadores</b>.
+            Para agradecer todo el apoyo, realicé un sorteo especial para la
+            comunidad con <b>$200 repartidos entre 3 ganadores</b> el
+            <b> 20 de diciembre de 2025</b>.
             <br />
             <br />
             🥇 <b>1er lugar:</b> $100 &nbsp;•&nbsp; 🥈 <b>2do lugar:</b> $50
             &nbsp;•&nbsp; 🥉 <b>3er lugar:</b> $50
             <br />
             <br />
-            Participan mis seguidores en <b>TikTok</b>, <b>Twitch</b>,{" "}
+            Participaron seguidores de <b>TikTok</b>, <b>Twitch</b>,{" "}
             <b>YouTube</b>, <b>Facebook</b> y <b>Kick</b>. El sorteo se
-            realizará en directo y todo el proceso será transparente.
+            realizó en directo y el proceso fue transparente.
           </p>
         </div>
 
@@ -144,8 +154,8 @@ export default function Sorteos() {
               margin: 0,
             }}
           >
-            Para conocer las <b>bases completas del sorteo</b>, visita la sección{" "}
-            <b>“Bases”</b> desde el menú superior de la página.
+            Puedes consultar las <b>bases generales</b> y los resultados desde
+            las secciones correspondientes del sitio. <Link href="/resultados">Ver resultados</Link>.
           </p>
         </div>
 
@@ -158,7 +168,7 @@ export default function Sorteos() {
               marginBottom: 4,
             }}
           >
-            Mientras en más redes me sigas, ¡más oportunidades tienes de ganar!
+            Sígueme en mis redes para enterarte de próximos sorteos
           </h3>
           <p
             style={{
@@ -167,7 +177,7 @@ export default function Sorteos() {
               marginTop: 2,
             }}
           >
-            Aquí tienes los links directos a mis redes:
+            Aquí tienes los enlaces directos a mis redes:
           </p>
         </div>
 
@@ -186,8 +196,9 @@ export default function Sorteos() {
               key={r.name}
               href={r.url}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               title={r.name}
+              className="social-network-link"
               style={{
                 width: 42,
                 height: 42,
@@ -200,14 +211,6 @@ export default function Sorteos() {
                 border: `1px solid ${r.color}`,
                 transition:
                   "all 0.25s ease, box-shadow 0.25s ease, transform 0.18s ease",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = "scale(1.15)";
-                e.currentTarget.style.boxShadow = `0 0 14px ${r.color}`;
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = "scale(1)";
-                e.currentTarget.style.boxShadow = "none";
               }}
             >
               <img

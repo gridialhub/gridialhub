@@ -3,7 +3,7 @@ import ContactoForm from "./ContactoForm";
 
 // 🔹 METADATA PARA SEO Y CANONICAL
 export const metadata = {
-  title: "Contacto | GridialHub",
+  title: "Contacto",
   description:
     "Ponte en contacto con GridialHub para dudas, propuestas, colaboraciones o temas relacionados con la comunidad gamer y la tecnología.",
   alternates: {

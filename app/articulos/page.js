@@ -4,7 +4,7 @@ import { posts } from "./posts";
 
 // 🔹 METADATA PARA SEO Y CANONICAL
 export const metadata = {
-  title: "Artículos sobre gaming y tecnología | GridialHub",
+  title: "Artículos sobre gaming y tecnología",
   description:
     "Explora todos los artículos publicados en GridialHub sobre gaming, creación de contenido, hardware y tecnología.",
   alternates: {
@@ -19,7 +19,7 @@ export default function ArticulosPage() {
   );
 
   return (
-    <main className="container page-fade">
+    <div className="page-fade">
       <h1
         style={{
           textAlign: "center",
@@ -59,6 +59,6 @@ export default function ArticulosPage() {
           ))}
         </div>
       </section>
-    </main>
+    </div>
   );
 }

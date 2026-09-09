@@ -2,7 +2,7 @@
 
 export const metadata = {
   title:
-    "Mejor configuración de Helldivers 2 en PC en 2026: más FPS y mejor puntería | GridialHub",
+    "Mejor configuración de Helldivers 2 en PC en 2026: más FPS y mejor puntería",
   description:
     "Guía para configurar Helldivers 2 en PC en 2026: opciones gráficas para subir FPS, mejorar visibilidad y ajustes de controles/sensibilidad para apuntar más cómodo.",
   alternates: {
@@ -42,7 +42,7 @@ export default function MejorConfigHelldivers2Page() {
           puntería
         </h1>
         <p className="meta">
-          {new Date("2025-11-22").toLocaleDateString("es-VE")} • 9 min de
+          {new Date("2025-11-22T00:00:00Z").toLocaleDateString("es-VE", { timeZone: "UTC" })} • 9 min de
           lectura
         </p>
 

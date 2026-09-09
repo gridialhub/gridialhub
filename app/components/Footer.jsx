@@ -1,3 +1,6 @@
+import Link from "next/link";
+import CookieSettingsButton from "./CookieSettingsButton";
+
 export default function Footer() {
   return (
     <footer style={{ borderTop: "1px solid var(--border)", marginTop: 24 }}>
@@ -13,10 +16,11 @@ export default function Footer() {
         <div>
           © {new Date().getFullYear()} GridialHub — Comunidad gaming y sorteos
         </div>
-        <div style={{ display: "flex", gap: 12 }}>
-          <a href="/bases">Bases</a>
-          <a href="/privacidad">Política de Privacidad</a>
-          <a href="/terminos">Términos y Condiciones</a>
+        <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+          <Link href="/bases">Bases</Link>
+          <Link href="/privacidad">Política de Privacidad</Link>
+          <Link href="/terminos">Términos y Condiciones</Link>
+          <CookieSettingsButton />
         </div>
       </div>
     </footer>

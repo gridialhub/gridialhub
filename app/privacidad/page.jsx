@@ -1,16 +1,19 @@
-"use client";
-
 import Link from "next/link";
 
-export default function Privacidad() {
-  const hoy = new Date().toLocaleDateString("es-VE", {
-    year: "numeric",
-    month: "long",
-    day: "2-digit",
-  });
+export const metadata = {
+  title: "Política de Privacidad",
+  description:
+    "Consulta cómo GridialHub trata los datos personales, las cookies y la analítica, y cómo puedes gestionar tus preferencias.",
+  alternates: {
+    canonical: "/privacidad",
+  },
+};
 
+const ultimaActualizacion = "09 de septiembre de 2026";
+
+export default function Privacidad() {
   return (
-    <div className="container" style={{ display: "grid", gap: 28 }}>
+    <div style={{ display: "grid", gap: 28 }}>
       {/* ENCABEZADO */}
       <header
         className="card"
@@ -27,7 +30,7 @@ export default function Privacidad() {
         <h1 style={{ fontSize: "clamp(26px,3vw,38px)", fontWeight: 900 }}>
           Política de Privacidad — GridialHub
         </h1>
-        <p className="meta">Última actualización: {hoy}</p>
+        <p className="meta">Última actualización: {ultimaActualizacion}</p>
         <p style={{ maxWidth: 900, margin: "0 auto" }}>
           En <b>GridialHub</b> respetamos tu privacidad. Esta política explica
           qué información recopilamos, con qué finalidad la usamos, por cuánto
@@ -61,7 +64,7 @@ export default function Privacidad() {
             incluyas en el mensaje.
           </li>
           <li>
-            <b>Datos técnicos no identificables</b>: dirección IP abreviada,
+            <b>Datos técnicos y de uso</b>: información técnica de conexión,
             tipo de navegador, dispositivo, sistema operativo, páginas
             visitadas, referencia y métricas anónimas/aglomeradas para
             estadísticas y rendimiento.
@@ -105,8 +108,9 @@ export default function Privacidad() {
             preferencias básicas.
           </li>
           <li>
-            <b>Métricas (Analytics):</b> medición anónima/aglomerada para
-            entender visitas y mejoras (sin identificarte personalmente).
+            <b>Métricas (Analytics):</b> Google Analytics se carga únicamente
+            después de que aceptes las cookies de analítica en el aviso de
+            preferencias. Si las rechazas, el sitio seguirá funcionando.
           </li>
           <li>
             <b>Publicidad — cuando esté activa:</b> podrían emplearse cookies o
@@ -116,8 +120,9 @@ export default function Privacidad() {
           </li>
         </ul>
         <p className="meta">
-          Cuando activemos cookies no esenciales, mostraremos un aviso para
-          aceptar o rechazar categorías.
+          Guardamos tu elección de analítica en el almacenamiento local del
+          navegador. Puedes cambiarla en cualquier momento desde
+          “Preferencias de cookies” en el pie de página.
         </p>
       </section>
 

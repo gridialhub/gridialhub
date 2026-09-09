@@ -5,7 +5,7 @@ import Link from "next/link";
 
 // 🔹 METADATA PARA SEO Y CANONICAL
 export const metadata = {
-  title: "Bases y condiciones de los sorteos | GridialHub",
+  title: "Bases y condiciones de los sorteos",
   description:
     "Consulta las bases y condiciones oficiales de los sorteos organizados por GridialHub: requisitos de participación, premios, entrega y más.",
   alternates: {
@@ -13,15 +13,11 @@ export const metadata = {
   },
 };
 
-export default function Bases() {
-  const hoy = new Date().toLocaleDateString("es-VE", {
-    year: "numeric",
-    month: "long",
-    day: "2-digit",
-  });
+const ultimaActualizacion = "09 de septiembre de 2026";
 
+export default function Bases() {
   return (
-    <div className="container" style={{ display: "grid", gap: 28 }}>
+    <div style={{ display: "grid", gap: 28 }}>
       {/* ENCABEZADO */}
       <header
         className="card"
@@ -38,7 +34,7 @@ export default function Bases() {
         <h1 style={{ fontSize: "clamp(26px,3vw,38px)", fontWeight: 900 }}>
           Bases y Condiciones de los Sorteos — GridialHub
         </h1>
-        <p className="meta">Última actualización: {hoy}</p>
+        <p className="meta">Última actualización: {ultimaActualizacion}</p>
         <p style={{ maxWidth: 900, margin: "0 auto" }}>
           A continuación se describen las reglas generales aplicables a todos
           los sorteos organizados por <b>GridialHub</b>. Cada evento podrá

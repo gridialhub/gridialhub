@@ -25,7 +25,7 @@ export default function Header() {
       }}
     >
       <div
-        className="container"
+        className="container header-inner"
         style={{
           display: "flex",
           alignItems: "center",
@@ -57,21 +57,27 @@ export default function Header() {
         {/* Nav dentro de un marco redondeado */}
         <div className="nav-pill">
           <nav style={{ display: "flex", gap: 8, alignItems: "center", padding: 4 }}>
-            {links.map((l) => (
-              <Link
-                key={l.href}
-                href={l.href}
-                className={pathname === l.href ? "navlink active" : "navlink"}
-                style={{
-                  padding: "8px 12px",
-                  borderRadius: 12,
-                  fontWeight: 600,
-                  fontSize: 14
-                }}
-              >
-                {l.label}
-              </Link>
-            ))}
+            {links.map((l) => {
+              const isActive =
+                pathname === l.href ||
+                (l.href !== "/" && pathname.startsWith(`${l.href}/`));
+
+              return (
+                <Link
+                  key={l.href}
+                  href={l.href}
+                  className={isActive ? "navlink active" : "navlink"}
+                  style={{
+                    padding: "8px 12px",
+                    borderRadius: 12,
+                    fontWeight: 600,
+                    fontSize: 14
+                  }}
+                >
+                  {l.label}
+                </Link>
+              );
+            })}
           </nav>
         </div>
       </div>

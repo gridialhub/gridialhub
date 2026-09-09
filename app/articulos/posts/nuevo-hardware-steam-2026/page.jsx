@@ -2,7 +2,7 @@
 
 export const metadata = {
   title:
-    "El nuevo hardware de Steam que llega en 2026: Steam Machine, Steam Frame y Steam Controller | GridialHub",
+    "El nuevo hardware de Steam que llega en 2026: Steam Machine, Steam Frame y Steam Controller",
   description:
     "Repaso completo al nuevo hardware de Steam que llega en 2026: Steam Machine, Steam Frame y la segunda generación del Steam Controller, y qué significan para los jugadores de PC.",
   alternates: {
@@ -41,7 +41,7 @@ export default function NuevoHardwareSteam2026Page() {
           Frame y Steam Controller
         </h1>
         <p className="meta">
-          {new Date("2025-11-15").toLocaleDateString("es-VE")} • 8 min de
+          {new Date("2025-11-15T00:00:00Z").toLocaleDateString("es-VE", { timeZone: "UTC" })} • 8 min de
           lectura
         </p>
 

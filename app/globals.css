@@ -1,12 +1,24 @@
-/* ====== FUENTES Y BASE GLOBAL ====== */
+/* ====== FUENTES, VARIABLES Y BASE GLOBAL ====== */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
 
+:root {
+  --bg: #0b0b0d;
+  --fg: #f3f4f6;
+  --muted: #9ca3af;
+  --card: #16161a;
+  --brand: #e879f9;
+  --brand-glow: #9333ea;
+  --border: #2a2a2f;
+}
+
+* { box-sizing: border-box; }
+
 html, body {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  color: var(--fg);
-  background: var(--bg);
   margin: 0;
   padding: 0;
+  color: var(--fg);
+  background: var(--bg);
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -17,36 +29,6 @@ h1, h2, h3 {
 
 p, li {
   line-height: 1.6;
-}
-
-/* ====== COLORES ACTUALIZADOS ====== */
-:root {
-  --bg: #0b0b0d;
-  --fg: #f8f9fa;
-  --muted: #9ca3af;
-  --card: #16161a;
-  --brand: #c084fc; /* tono violeta moderno */
-  --brand-glow: #9333ea; /* brillo neón */
-  --border: #2a2a2f;
-}
-
-/* =========================
-   VARIABLES Y BASE
-   ========================= */
-:root {
-  --bg: #0b0b0d;
-  --fg: #f3f4f6;
-  --muted: #9ca3af;
-  --card: #16161a;
-  --brand: #e879f9;
-  --border: #2a2a2f;
-}
-
-* { box-sizing: border-box; }
-html, body {
-  margin: 0; padding: 0;
-  background: var(--bg); color: var(--fg);
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
 a { color: var(--fg); text-decoration: none; }
 
@@ -489,17 +471,6 @@ nav a.active { opacity: 1; text-decoration: underline; }
 }
 /* ====== FASE 2 — ANIMACIONES SUAVES ====== */
 
-/* --- Aparición suave al hacer scroll --- */
-.reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity .7s ease, transform .7s ease;
-}
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 /* --- Brillo leve en íconos y botones --- */
 .btn:hover,
 .navlink:hover,
@@ -537,22 +508,6 @@ a, button {
     transform: scale(1) translateY(0);
   }
 }
-/* ====== FIX: animaciones que no reaparecen ====== */
-.reveal {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-/* ===== Transición entre páginas (fade + leve slide) ===== */
-.page-fade {
-  animation: pageFadeIn .35s ease both;
-}
-
 @keyframes pageFadeIn {
   from { opacity: 0; transform: translateY(8px); filter: saturate(0.9); }
   to   { opacity: 1; transform: none; filter: saturate(1); }
@@ -563,19 +518,10 @@ a, button {
   will-change: opacity, transform, filter;
 }
 
-.page-fade.exit {
-  animation: pageFadeOut .25s ease both;
-  pointer-events: none; /* evita clics durante salida */
-}
-
-@keyframes pageFadeOut {
-  from { opacity: 1; transform: none;             filter: saturate(1); }
-  to   { opacity: 0; transform: translateY(6px);  filter: saturate(0.9); }
-}
 
 /* Respeto a accesibilidad: sin animaciones si el usuario lo pide */
 @media (prefers-reduced-motion: reduce) {
-  .page-fade, .page-fade.exit {
+  .page-fade {
     animation: none !important;
   }
 }
@@ -603,7 +549,7 @@ a, button {
 
 .article-content figcaption {
   font-size: 0.85rem;
-  color: var(--text-secondary);
+  color: var(--muted);
   margin-top: 6px;
 }
 /* --- Tarjeta de artículos clickeable --- */
@@ -674,3 +620,102 @@ a, button {
   box-shadow: 0 8px 18px color-mix(in oklab, var(--brand-glow), #000 70%);
 }
 
+
+/* ===== Enlaces de redes ===== */
+.social-network-link:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 14px color-mix(in oklab, var(--brand), transparent 25%);
+}
+
+/* ===== Preferencias de cookies ===== */
+.cookie-banner {
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  z-index: 1000;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  background: color-mix(in oklab, var(--card), #000 12%);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+}
+
+.cookie-banner p {
+  margin: 6px 0 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.cookie-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.footer-link-button {
+  appearance: none;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .cookie-banner {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .cookie-actions {
+    width: 100%;
+  }
+
+  .cookie-actions .btn {
+    flex: 1;
+  }
+}
+
+/* ===== Header y hero responsivos ===== */
+@media (max-width: 800px) {
+  .header-inner {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 12px !important;
+  }
+
+  .header-inner .brand-name {
+    align-self: center;
+  }
+
+  .header-inner .nav-pill {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .header-inner .nav-pill nav {
+    overflow-x: auto;
+    scrollbar-width: thin;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .home-hero-content {
+    padding: 36px 18px !important;
+  }
+}

@@ -2,7 +2,7 @@
 
 export const metadata = {
   title:
-    "Qué tarjeta gráfica comprar en 2026 sin botar la plata | Guía para gamers | GridialHub",
+    "Qué tarjeta gráfica comprar en 2026 sin botar la plata | Guía para gamers",
   description:
     "Te explico cómo elegir la mejor tarjeta gráfica en 2026 según tu presupuesto, tipo de juegos y monitor, evitando el sobreprecio y el marketing vacío.",
   alternates: {
@@ -64,7 +64,7 @@ export default function QueGraficaComprarPage() {
           Qué tarjeta gráfica comprar en 2026 sin botar la plata
         </h1>
         <p className="meta">
-          {new Date("2026-05-06").toLocaleDateString("es-VE")} • 8 min de
+          {new Date("2026-05-06T00:00:00Z").toLocaleDateString("es-VE", { timeZone: "UTC" })} • 8 min de
           lectura
         </p>
 

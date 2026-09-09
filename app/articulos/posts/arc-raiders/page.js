@@ -2,7 +2,7 @@
 
 export const metadata = {
   title:
-    "ARC Raiders: cómo la IA está llevando el gameplay a otro nivel | GridialHub",
+    "ARC Raiders: cómo la IA está llevando el gameplay a otro nivel",
   description:
     "ARC Raiders combina acción cooperativa con inteligencia artificial avanzada para crear enfrentamientos dinámicos, impredecibles y desafiantes.",
   alternates: {
@@ -36,7 +36,7 @@ export default function ArcRaidersPage() {
       <header style={{ marginBottom: 8 }}>
         <h1>ARC Raiders: cómo la IA está llevando el gameplay a otro nivel</h1>
         <p className="meta">
-          {new Date("2025-11-14").toLocaleDateString("es-VE")}
+          {new Date("2025-11-14T00:00:00Z").toLocaleDateString("es-VE", { timeZone: "UTC" })}
         </p>
 
         <div

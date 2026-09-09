@@ -19,7 +19,7 @@ export default function Home() {
         <div className="hero__bg" aria-hidden="true" />
 
         <div
-          className="container"
+          className="container home-hero-content"
           style={{
             display: "flex",
             flexDirection: "column",
@@ -113,7 +113,7 @@ export default function Home() {
                     <h4 style={{ marginBottom: 4 }}>{post.title}</h4>
 
                     <p className="meta">
-                      {new Date(post.date).toLocaleDateString("es-VE")} •{" "}
+                      {new Date(`${post.date}T00:00:00Z`).toLocaleDateString("es-VE", { timeZone: "UTC" })} •{" "}
                       {post.readingTime}
                     </p>
 
