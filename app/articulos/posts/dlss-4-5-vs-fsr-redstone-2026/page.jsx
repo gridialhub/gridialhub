@@ -352,6 +352,30 @@ export default function Dlss45VsFsrRedstone2026Page() {
             </table>
           </div>
 
+          <figure style={{ margin: "12px 0 28px" }}>
+            <img
+              src="/articulos/imagen-dlss-4-5-compatibilidad-rtx.png"
+              alt="Compatibilidad de DLSS 4.5 con las generaciones GeForce RTX 20, RTX 30, RTX 40 y RTX 50"
+              width="1672"
+              height="941"
+              loading="lazy"
+              decoding="async"
+              style={{
+                width: "100%",
+                height: "auto",
+                display: "block",
+                borderRadius: 14,
+              }}
+            />
+            <figcaption
+              className="meta"
+              style={{ marginTop: 8, textAlign: "center" }}
+            >
+              Compatibilidad de las principales funciones de DLSS 4.5 según la
+              generación GeForce RTX.
+            </figcaption>
+          </figure>
+
           <h2>¿Qué es AMD FSR Redstone?</h2>
 
           <p>
@@ -467,6 +491,30 @@ export default function Dlss45VsFsrRedstone2026Page() {
             </table>
           </div>
 
+          <figure style={{ margin: "12px 0 28px" }}>
+            <img
+              src="/articulos/imagen-fsr-redstone-compatibilidad-radeon.png"
+              alt="Compatibilidad de AMD FSR Redstone con Radeon RX 6000, RX 7000 y RX 9000"
+              width="1672"
+              height="941"
+              loading="lazy"
+              decoding="async"
+              style={{
+                width: "100%",
+                height: "auto",
+                display: "block",
+                borderRadius: 14,
+              }}
+            />
+            <figcaption
+              className="meta"
+              style={{ marginTop: 8, textAlign: "center" }}
+            >
+              Las funciones más avanzadas de FSR Redstone dependen de la
+              generación Radeon utilizada.
+            </figcaption>
+          </figure>
+
           <h2>DLSS 4.5 vs FSR Redstone: la comparación que realmente importa</h2>
 
           <p>
@@ -559,6 +607,30 @@ export default function Dlss45VsFsrRedstone2026Page() {
             suele funcionar mejor que intentar “rescatar” un juego que apenas se
             sostiene a 25 o 30 FPS.
           </p>
+
+          <figure style={{ margin: "20px 0 28px" }}>
+            <img
+              src="/articulos/imagen-fps-vs-frame-generation.png"
+              alt="Diferencia entre FPS renderizados por la GPU y FPS mostrados mediante Frame Generation"
+              width="1672"
+              height="941"
+              loading="lazy"
+              decoding="async"
+              style={{
+                width: "100%",
+                height: "auto",
+                display: "block",
+                borderRadius: 14,
+              }}
+            />
+            <figcaption
+              className="meta"
+              style={{ marginTop: 8, textAlign: "center" }}
+            >
+              Frame Generation aumenta la fluidez visual, pero los FPS generados
+              no equivalen a FPS renderizados en términos de respuesta.
+            </figcaption>
+          </figure>
 
           <h3>Latencia: el número que un contador de FPS puede ocultar</h3>
 
