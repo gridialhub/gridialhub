@@ -262,6 +262,182 @@ export default function Dlss45VsFsrRedstone2026Page() {
             </tbody>
           </table>
         </div>
+        <h2>¿Qué es AMD FSR Redstone?</h2>
+
+<p>
+  AMD también ha cambiado bastante su estrategia con FidelityFX Super
+  Resolution. Lo que antes conocíamos principalmente como un sistema de
+  escalado ha evolucionado hacia un conjunto más amplio de tecnologías
+  basadas en aprendizaje automático.
+</p>
+
+<p>
+  En 2026, AMD agrupa estas funciones bajo el nombre{" "}
+  <b>FSR “Redstone”</b>. Redstone no es una sola función, sino una suite
+  formada por varias tecnologías que trabajan sobre diferentes partes del
+  proceso de renderizado.
+</p>
+
+<p>
+  Actualmente, AMD divide Redstone en cuatro componentes principales:
+</p>
+
+<ul>
+  <li>
+    <b>FSR Upscaling:</b> reconstruye una imagen de mayor resolución a partir
+    de una resolución interna menor utilizando aprendizaje automático.
+  </li>
+
+  <li>
+    <b>FSR Frame Generation:</b> genera fotogramas adicionales para aumentar
+    la fluidez visual.
+  </li>
+
+  <li>
+    <b>FSR Ray Regeneration:</b> reconstruye información relacionada con
+    efectos de ray tracing para reducir el costo de renderizado.
+  </li>
+
+  <li>
+    <b>FSR Radiance Caching:</b> utiliza aprendizaje automático para ayudar a
+    estimar cómo se propaga la iluminación dentro de una escena.
+  </li>
+</ul>
+
+<h2>¿Qué pasó con FSR 4?</h2>
+
+<p>
+  Si has visto referencias a <b>FSR 4</b>, no significa que AMD haya
+  abandonado esa tecnología.
+</p>
+
+<p>
+  AMD cambió oficialmente el nombre de FSR 4 a{" "}
+  <b>FSR Upscaling</b> para distinguir mejor el escalado de las demás
+  funciones que forman parte de FSR Redstone.
+</p>
+
+<p>
+  Por eso todavía es normal encontrar juegos, controladores, noticias o
+  comparativas que utilizan el nombre FSR 4. En la práctica, cuando hablamos
+  del escalado basado en aprendizaje automático que AMD introdujo con FSR 4,
+  estamos hablando de la tecnología que actualmente AMD denomina FSR
+  Upscaling.
+</p>
+
+<h2>No todas las Radeon reciben el mismo Redstone</h2>
+
+<p>
+  Aquí ocurre algo parecido a lo que vimos con NVIDIA. Tener una tarjeta
+  Radeon compatible con alguna versión de FSR no significa automáticamente
+  tener acceso a todas las funciones modernas de Redstone.
+</p>
+
+<h3>Radeon RX 6000</h3>
+
+<p>
+  Las RX 6000 continúan siendo compatibles con versiones anteriores de FSR
+  en los juegos que las soporten, pero actualmente no reciben el conjunto
+  Redstone basado en aprendizaje automático.
+</p>
+
+<p>
+  AMD ha indicado que el soporte de <b>FSR Upscaling</b> basado en ML para
+  las Radeon RX 6000 está previsto para 2027.
+</p>
+
+<h3>Radeon RX 7000</h3>
+
+<p>
+  Las Radeon RX 7000 ya pueden utilizar <b>FSR Upscaling</b> basado en
+  aprendizaje automático en juegos compatibles.
+</p>
+
+<p>
+  Sin embargo, esto no significa que la serie RX 7000 tenga acceso a todo el
+  conjunto Redstone. Actualmente, AMD reserva las funciones más completas de
+  Frame Generation basada en ML y Ray Regeneration para hardware más reciente.
+</p>
+
+<h3>Radeon RX 9000</h3>
+
+<p>
+  La serie RX 9000 es actualmente el hardware principal para el que AMD ha
+  diseñado el conjunto completo de FSR Redstone.
+</p>
+
+<p>
+  Estas tarjetas pueden utilizar FSR Upscaling, Frame Generation basada en
+  aprendizaje automático y Ray Regeneration en los juegos compatibles,
+  aprovechando el hardware de aceleración ML de la arquitectura más reciente.
+</p>
+
+<p>
+  Esto representa un cambio importante en la filosofía histórica de FSR.
+  Durante años, una de las grandes ventajas de AMD era que muchas versiones de
+  FSR funcionaban en una enorme variedad de tarjetas gráficas, incluso de otras
+  marcas. Con Redstone, AMD está utilizando cada vez más hardware especializado
+  para ejecutar modelos de aprendizaje automático.
+</p>
+
+<div style={{ overflowX: "auto", margin: "8px 0 12px" }}>
+  <table
+    style={{
+      width: "100%",
+      borderCollapse: "collapse",
+      minWidth: 620,
+    }}
+  >
+    <thead>
+      <tr>
+        <th style={{ textAlign: "left", padding: 10 }}>
+          Función
+        </th>
+        <th style={{ padding: 10 }}>RX 6000</th>
+        <th style={{ padding: 10 }}>RX 7000</th>
+        <th style={{ padding: 10 }}>RX 9000</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td style={{ padding: 10 }}>FSR Upscaling basado en ML</td>
+        <td style={{ textAlign: "center", padding: 10 }}>
+          Previsto 2027
+        </td>
+        <td style={{ textAlign: "center", padding: 10 }}>Sí</td>
+        <td style={{ textAlign: "center", padding: 10 }}>Sí</td>
+      </tr>
+
+      <tr>
+        <td style={{ padding: 10 }}>FSR Frame Generation</td>
+        <td style={{ textAlign: "center", padding: 10 }}>
+          Versiones anteriores de FSR
+        </td>
+        <td style={{ textAlign: "center", padding: 10 }}>
+          Según implementación
+        </td>
+        <td style={{ textAlign: "center", padding: 10 }}>Sí</td>
+      </tr>
+
+      <tr>
+        <td style={{ padding: 10 }}>
+          Frame Generation basado en ML de Redstone
+        </td>
+        <td style={{ textAlign: "center", padding: 10 }}>No</td>
+        <td style={{ textAlign: "center", padding: 10 }}>No</td>
+        <td style={{ textAlign: "center", padding: 10 }}>Sí</td>
+      </tr>
+
+      <tr>
+        <td style={{ padding: 10 }}>FSR Ray Regeneration</td>
+        <td style={{ textAlign: "center", padding: 10 }}>No</td>
+        <td style={{ textAlign: "center", padding: 10 }}>No</td>
+        <td style={{ textAlign: "center", padding: 10 }}>Sí</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
       </div>
     </article>
   );
