@@ -1,45 +1,63 @@
 // app/articulos/posts.js
 export const posts = [
-
- {
-  slug: "posts/que-bitrate-usar-obs-tiktok-twitch-youtube-2026",
-  title: "Qué bitrate usar en OBS para TikTok, Twitch y YouTube en 2026",
-  date: "2025-11-23",
-  readingTime: "9 min de lectura",
-  meta: "23 de noviembre de 2025 · 9 min de lectura",
-  excerpt:
-    "Te explico qué bitrate usar en OBS para TikTok, Twitch y YouTube en 2026 según tu velocidad de subida, resolución y FPS, sin reventar tu conexión ni tu stream.",
-  href: "/articulos/posts/que-bitrate-usar-obs-tiktok-twitch-youtube-2026",
-  image: "/articulos/banner-bitrate-obs-2026.png",
-  thumbClass: "thumb-pc",
-  tags: ["OBS", "Bitrate", "Streaming", "TikTok", "Twitch", "YouTube"],
-},
- {
-  slug: "posts/mejor-configuracion-helldivers-2-2026",
-  title: "Mejor configuración de Helldivers 2 en PC en 2026: más FPS y mejor puntería",
-  date: "2025-11-22", // puedes cambiar la fecha si quieres
-  readingTime: "9 min de lectura",
-  meta: "22 de noviembre de 2025 · 9 min de lectura",
-  excerpt:
-    "Te dejo una configuración recomendada de gráficos y controles para Helldivers 2 en PC en 2026: más FPS, mejor visibilidad y una puntería más cómoda sin perder calidad.",
-  href: "/articulos/posts/mejor-configuracion-helldivers-2-2026",
-  image: "/articulos/banner-helldivers2-2026.png", // cuando tengas el banner, guárdalo con este nombre
-  thumbClass: "thumb-game",
-  tags: ["Helldivers 2", "FPS", "Controles", "PC gamer"],
-},
   {
-  slug: "posts/configuracion-obs-stream-grabacion",
-  title: "Configuración de OBS en 2026 para stream y grabación sin perder FPS",
-  date: "2025-11-21", // usa la fecha que quieras en formato ISO
-  readingTime: "10 min de lectura",
-  meta: "21 de noviembre de 2025 · 10 min de lectura",
-  excerpt:
-    "Guía paso a paso para configurar OBS en 2026 para streaming y grabación con buena calidad sin matar los FPS de tus juegos.",
-  href: "/articulos/posts/configuracion-obs-stream-grabacion",
-  image: "/articulos/banner-obs-2026.png", // cuando tengas el banner
-  thumbClass: "thumb-pc",
-  tags: ["OBS", "Streaming", "Grabación", "PC gamer"],
-},
+    slug: "posts/dlss-4-5-vs-fsr-redstone-2026",
+    title:
+      "DLSS 4.5 vs AMD FSR Redstone en 2026: diferencias, compatibilidad y cuál conviene",
+    date: "2026-09-09",
+    readingTime: "15 min de lectura",
+    meta: "9 de septiembre de 2026 · 15 min de lectura",
+    excerpt:
+      "DLSS 4.5 y AMD FSR Redstone frente a frente: calidad de imagen, Frame Generation, latencia, ray tracing, compatibilidad y el nuevo contexto de DLSS 5.",
+    href: "/articulos/posts/dlss-4-5-vs-fsr-redstone-2026",
+    image: "/articulos/banner-dlss-4-5-vs-fsr-redstone-2026.png",
+    thumbClass: "thumb-pc",
+    tags: ["DLSS 4.5", "FSR Redstone", "GPU", "NVIDIA", "AMD"],
+  },
+
+  {
+    slug: "posts/que-bitrate-usar-obs-tiktok-twitch-youtube-2026",
+    title: "Qué bitrate usar en OBS para TikTok, Twitch y YouTube en 2026",
+    date: "2025-11-23",
+    readingTime: "9 min de lectura",
+    meta: "23 de noviembre de 2025 · 9 min de lectura",
+    excerpt:
+      "Te explico qué bitrate usar en OBS para TikTok, Twitch y YouTube en 2026 según tu velocidad de subida, resolución y FPS, sin reventar tu conexión ni tu stream.",
+    href: "/articulos/posts/que-bitrate-usar-obs-tiktok-twitch-youtube-2026",
+    image: "/articulos/banner-bitrate-obs-2026.png",
+    thumbClass: "thumb-pc",
+    tags: ["OBS", "Bitrate", "Streaming", "TikTok", "Twitch", "YouTube"],
+  },
+
+  {
+    slug: "posts/mejor-configuracion-helldivers-2-2026",
+    title:
+      "Mejor configuración de Helldivers 2 en PC en 2026: más FPS y mejor puntería",
+    date: "2025-11-22",
+    readingTime: "9 min de lectura",
+    meta: "22 de noviembre de 2025 · 9 min de lectura",
+    excerpt:
+      "Te dejo una configuración recomendada de gráficos y controles para Helldivers 2 en PC en 2026: más FPS, mejor visibilidad y una puntería más cómoda sin perder calidad.",
+    href: "/articulos/posts/mejor-configuracion-helldivers-2-2026",
+    image: "/articulos/banner-helldivers2-2026.png",
+    thumbClass: "thumb-game",
+    tags: ["Helldivers 2", "FPS", "Controles", "PC gamer"],
+  },
+
+  {
+    slug: "posts/configuracion-obs-stream-grabacion",
+    title: "Configuración de OBS en 2026 para stream y grabación sin perder FPS",
+    date: "2025-11-21",
+    readingTime: "10 min de lectura",
+    meta: "21 de noviembre de 2025 · 10 min de lectura",
+    excerpt:
+      "Guía paso a paso para configurar OBS en 2026 para streaming y grabación con buena calidad sin matar los FPS de tus juegos.",
+    href: "/articulos/posts/configuracion-obs-stream-grabacion",
+    image: "/articulos/banner-obs-2026.png",
+    thumbClass: "thumb-pc",
+    tags: ["OBS", "Streaming", "Grabación", "PC gamer"],
+  },
+
   {
     slug: "posts/nuevo-hardware-steam-2026",
     title:
@@ -54,6 +72,7 @@ export const posts = [
     thumbClass: "thumb-game",
     tags: ["Steam", "Hardware", "PC gamer", "VR"],
   },
+
   {
     slug: "posts/como-optimizar-windows-11-para-juegos",
     title: "Cómo optimizar Windows 11 para juegos en 2025 (sin romper tu PC)",
@@ -67,6 +86,7 @@ export const posts = [
     thumbClass: "thumb-pc",
     tags: ["Windows 11", "Optimización", "PC gamer", "Rendimiento"],
   },
+
   {
     slug: "posts/ia_fps",
     title:
@@ -81,6 +101,7 @@ export const posts = [
     thumbClass: "thumb-pc",
     tags: ["IA", "FPS", "Optimización"],
   },
+
   {
     slug: "posts/arc-raiders",
     title: "ARC Raiders: cómo la IA está llevando el gameplay a otro nivel",
@@ -94,6 +115,7 @@ export const posts = [
     thumbClass: "thumb-game",
     tags: ["ARC Raiders", "IA", "Shooter cooperativo"],
   },
+
   {
     slug: "posts/que-grafica-comprar-sin-botar-la-plata",
     title: "Qué tarjeta gráfica comprar en 2026 sin botar la plata",
