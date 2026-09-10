@@ -1,6 +1,21 @@
 // app/articulos/posts.js
 export const posts = [
   {
+    slug: "posts/twitch-dual-format-obs-streaming-vertical-horizontal",
+    title:
+      "Cómo hacer streaming vertical y horizontal en Twitch con OBS: guía de Dual Format",
+    date: "2026-09-10",
+    readingTime: "10 min de lectura",
+    meta: "10 de septiembre de 2026 · 10 min de lectura",
+    excerpt:
+      "Configura Twitch Dual Format con OBS y Aitum Vertical: requisitos, escenas enlazadas, composición para móviles y soluciones a los problemas más comunes.",
+    href: "/articulos/posts/twitch-dual-format-obs-streaming-vertical-horizontal",
+    image: "/articulos/obs-twitch-dual-format-hero.webp",
+    thumbClass: "thumb-pc",
+    tags: ["OBS", "Twitch", "Dual Format", "Aitum Vertical", "Streaming"],
+  },
+
+  {
     slug: "posts/dlss-4-5-vs-fsr-redstone-2026",
     title:
       "DLSS 4.5 vs AMD FSR Redstone en 2026: diferencias, compatibilidad y cuál conviene",
