@@ -327,6 +327,19 @@ export default function ConfiguracionObs2026Page() {
           en disco y los resultados en YouTube o Twitch.
         </p>
 
+        <p>
+          Para preparar una composición específica para quienes te ven desde el
+          móvil, consulta la{" "}
+          <a
+            href="/articulos/posts/twitch-dual-format-obs-streaming-vertical-horizontal"
+            style={{ textDecoration: "underline", textUnderlineOffset: 3 }}
+          >
+            guía de Twitch Dual Format con OBS y Aitum Vertical
+          </a>
+          . Explica cómo enviar los formatos horizontal y vertical en el mismo
+          directo y comprobar su funcionamiento.
+        </p>
+
         <h2>7. Conclusión</h2>
 
         <p>
