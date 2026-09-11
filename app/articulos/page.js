@@ -14,8 +14,8 @@ export default function ArticulosPage() {
     <div className={styles.page}>
       <header className={styles.intro}>
         <p className={styles.eyebrow}>GridialHub <span aria-hidden="true">/</span> Artículos</p>
-        <h1>Guías para jugar y crear mejor</h1>
-        <p className={styles.lead}>Hardware, rendimiento y streaming, explicado con claridad.</p>
+        <h1>Más FPS. Mejores directos. Compras con criterio.</h1>
+        <p className={styles.lead}>Guías de hardware, juegos y OBS para saber qué ajustar y en qué vale la pena invertir.</p>
       </header>
       <section aria-label="Últimos artículos">
         <ArticleGrid posts={sortedPosts} eagerFirst />
