@@ -21,3 +21,12 @@ npm run dev
 ## Pendiente/opcional
 - Añadir un backend si se desea que el formulario de contacto envíe mensajes sin abrir el cliente de correo.
 - Configurar `public/ads.txt` cuando se active una red publicitaria.
+
+## Miniaturas de artículos
+Las tarjetas de inicio y artículos comparten `app/components/ArticleGrid.jsx`.
+En `app/articulos/posts.js`, cada artículo puede declarar `category` y `thumbnail`
+(ruta sin sufijo, por ejemplo `/articulos/thumbs/mi-imagen`). Tras añadir la imagen
+original a `public/articulos/`, ejecuta `npm run thumbnails`. Se generan versiones
+WebP de 480 y 800 píxeles en proporción 16:9; revisa el recorte antes de publicar.
+Las imágenes originales de los artículos se conservan. Incluye las miniaturas
+resultantes en el commit. Si falta `thumbnail`, la tarjeta utiliza `image`.

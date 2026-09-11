@@ -1,63 +1,24 @@
-// app/articulos/page.js
-import Link from "next/link";
+import ArticleGrid from "../components/ArticleGrid";
 import { posts } from "./posts";
+import styles from "./page.module.css";
 
-// 🔹 METADATA PARA SEO Y CANONICAL
 export const metadata = {
   title: "Artículos sobre gaming y tecnología",
-  description:
-    "Explora todos los artículos publicados en GridialHub sobre gaming, creación de contenido, hardware y tecnología.",
-  alternates: {
-    canonical: "/articulos", // → https://gridialhub.com/articulos
-  },
+  description: "Explora todos los artículos publicados en GridialHub sobre gaming, creación de contenido, hardware y tecnología.",
+  alternates: { canonical: "/articulos" },
 };
 
 export default function ArticulosPage() {
-  // Ordenamos por fecha descendente para que salgan los más nuevos primero
-  const sortedPosts = [...posts].sort(
-    (a, b) => new Date(b.date) - new Date(a.date)
-  );
-
+  const sortedPosts = [...posts].sort((a, b) => new Date(b.date) - new Date(a.date));
   return (
-    <div className="page-fade">
-      <h1
-        style={{
-          textAlign: "center",
-          marginBottom: 24,
-          fontSize: "clamp(32px, 4vw, 42px)",
-        }}
-      >
-        Artículos
-      </h1>
-
-      <section className="card" style={{ marginTop: 0 }}>
-        <h2 style={{ marginBottom: 8 }}>Últimos artículos</h2>
-
-        <div className="post-grid">
-          {sortedPosts.map((post) => (
-            <Link
-              key={post.slug}
-              href={post.href}
-              className="post-card-link clickable-card"
-            >
-              <article className="post-card">
-                {post.image ? (
-                  <div className="post-thumb with-img">
-                    <img src={post.image} alt={post.title} />
-                  </div>
-                ) : (
-                  <div className={`post-thumb ${post.thumbClass || ""}`} />
-                )}
-
-                <div className="post-body">
-                  <h4>{post.title}</h4>
-                  {post.meta && <p className="meta">{post.meta}</p>}
-                  <p>{post.excerpt}</p>
-                </div>
-              </article>
-            </Link>
-          ))}
-        </div>
+    <div className={styles.page}>
+      <header className={styles.intro}>
+        <p className={styles.eyebrow}>GridialHub <span aria-hidden="true">/</span> Artículos</p>
+        <h1>Hardware, juegos y streaming</h1>
+        <p className={styles.lead}>Análisis, configuraciones y guías para tu PC y tus directos.</p>
+      </header>
+      <section aria-label="Últimos artículos">
+        <ArticleGrid posts={sortedPosts} eagerFirst />
       </section>
     </div>
   );
