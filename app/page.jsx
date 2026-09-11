@@ -1,13 +1,14 @@
 // app/page.jsx
 
 import Link from "next/link";
+import ArticleGrid from "./components/ArticleGrid";
 import { posts } from "./articulos/posts";
 
 export default function Home() {
-  // Tomamos los 4 artículos más recientes, ordenados por fecha descendente
+  // Tomamos los 6 artículos más recientes, ordenados por fecha descendente
   const latestPosts = [...posts]
     .sort((a, b) => new Date(b.date) - new Date(a.date))
-    .slice(0, 4);
+    .slice(0, 6);
 
   return (
     <div className="home" style={{ display: "grid", gap: 24 }}>
@@ -62,85 +63,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ÚLTIMOS ARTÍCULOS */}
-      <section className="card" style={{ padding: 16 }}>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            gap: 12,
-          }}
-        >
-          <h3 style={{ margin: 0 }}>Últimos artículos</h3>
-
-          <Link href="/articulos" className="btn btn-secondary">
-            Ver todos
-          </Link>
+      <section aria-labelledby="latest-articles">
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 16, marginBottom: 24 }}>
+          <h2 id="latest-articles" style={{ margin: 0, fontSize: "clamp(20px, 3vw, 28px)" }}>Últimos artículos</h2>
+          <Link href="/articulos" style={{ color: "var(--brand)", whiteSpace: "nowrap" }}>Ver todos →</Link>
         </div>
-
-        {/* GRID DE ARTÍCULOS */}
-        <div className="post-grid" style={{ marginTop: 14 }}>
-          {latestPosts.map((post) => {
-            const cover = post.image || null;
-
-            return (
-              <Link
-                key={post.slug}
-                href={post.href}
-                className="clickable-card-link"
-                style={{ textDecoration: "none", color: "inherit" }}
-              >
-                <article className="post-card clickable-card">
-                  {/* MINIATURA DEL ARTÍCULO */}
-                  <div
-                    className={`post-thumb ${
-                      cover ? "with-img" : "thumb-game"
-                    }`}
-                    style={
-                      cover
-                        ? {
-                            backgroundImage: `url(${cover})`,
-                            backgroundSize: "cover",
-                            backgroundPosition: "center",
-                          }
-                        : {}
-                    }
-                  />
-
-                  {/* CONTENIDO */}
-                  <div className="post-body">
-                    <h4 style={{ marginBottom: 4 }}>{post.title}</h4>
-
-                    <p className="meta">
-                      {new Date(`${post.date}T00:00:00Z`).toLocaleDateString("es-VE", { timeZone: "UTC" })} •{" "}
-                      {post.readingTime}
-                    </p>
-
-                    <p className="meta" style={{ marginTop: 4 }}>
-                      {post.excerpt}
-                    </p>
-
-                    <div
-                      style={{
-                        display: "flex",
-                        gap: 8,
-                        flexWrap: "wrap",
-                        marginTop: 8,
-                      }}
-                    >
-                      {post.tags?.map((t) => (
-                        <span key={t} className="badge">
-                          {t}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </article>
-              </Link>
-            );
-          })}
-        </div>
+        <ArticleGrid posts={latestPosts} headingLevel={3} />
       </section>
     </div>
   );
