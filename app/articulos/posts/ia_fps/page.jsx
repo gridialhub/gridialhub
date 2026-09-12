@@ -1,13 +1,30 @@
-// app/articulos/posts/ia_fps/page.jsx
+const title = 'IA y FPS: qué hacen DLSS, FSR y XeSS y cómo configurarlos';
+const description = 'Diferencias entre escalado, generación de fotogramas y latencia. Aprende a comparar DLSS, FSR y XeSS sin confundir FPS mostrados con respuesta real.';
+const articleUrl = "https://gridialhub.com/articulos/posts/ia_fps";
+const publishedAt = "2025-11-14T00:00:00Z";
+const updatedAt = "2026-09-12T00:00:00Z";
+const articleImage = "https://gridialhub.com/articulos/banner-ia-fps.png";
 
 export const metadata = {
-  title:
-    "Cómo la IA está optimizando tus FPS en tiempo real: el salto que da tu PC gamer",
-  description:
-    "La inteligencia artificial ya está dentro de tu GPU, tus drivers y tu sistema para darte más FPS, mejor calidad visual y menos lag. Te explico cómo funciona y cómo aprovecharla.",
-  alternates: {
-    canonical: "/articulos/posts/ia_fps",
-  },
+  title,
+  description,
+  alternates: { canonical: articleUrl },
+  openGraph: { title, description, url: articleUrl, type: "article", publishedTime: publishedAt, modifiedTime: updatedAt, images: [articleImage] },
+  twitter: { card: "summary_large_image", title, description, images: [articleImage] },
+};
+
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: title,
+  description,
+  image: [articleImage],
+  datePublished: publishedAt,
+  dateModified: updatedAt,
+  inLanguage: "es",
+  author: { "@type": "Organization", name: "GridialHub", url: "https://gridialhub.com" },
+  publisher: { "@type": "Organization", name: "GridialHub", url: "https://gridialhub.com" },
+  mainEntityOfPage: articleUrl,
 };
 
 export default function IaFpsPage() {
@@ -38,13 +55,9 @@ export default function IaFpsPage() {
 
       {/* Encabezado */}
       <header style={{ marginBottom: 8 }}>
-        <h1 style={{ marginBottom: 8 }}>
-          Cómo la IA está optimizando tus FPS en tiempo real: el salto que da tu
-          PC gamer
-        </h1>
+        <h1 style={{ marginBottom: 8 }}>{title}</h1>
         <p className="meta">
-          {new Date("2025-11-14T00:00:00Z").toLocaleDateString("es-VE", { timeZone: "UTC" })} • 7 min de
-          lectura
+          Por GridialHub · Publicado el <time dateTime="2025-11-14">14 de noviembre de 2025</time> · Actualizado el <time dateTime="2026-09-12">12 de septiembre de 2026</time>
         </p>
         <div
           style={{ display: "flex", gap: 8, flexWrap: "wrap", marginTop: 8 }}
@@ -62,175 +75,138 @@ export default function IaFpsPage() {
       {/* Contenido del artículo */}
       <div className="article-content">
         <p>
-          Durante años, los gamers hemos perseguido una meta clara:{" "}
-          <b>más FPS y mejor rendimiento sin sacrificar calidad</b>. Subir la
-          tasa de cuadros por segundo siempre ha sido una mezcla de ajustar
-          gráficos, bajar sombras, desactivar efectos y cruzar los dedos para
-          que el juego esté bien optimizado.
+          Activar una opción de IA puede aumentar los FPS que ves en pantalla,
+          pero ese número no explica por sí solo cómo se siente el juego.
+          <b> Escalar una imagen, generar fotogramas y reducir la latencia son
+          funciones distintas.</b> Antes de elegir DLSS, FSR o XeSS, conviene
+          saber cuál estás activando y qué problema intentas resolver.
         </p>
-
         <p>
-          En 2025 eso está cambiando. La inteligencia artificial (IA) ya no es
-          solo algo que usan los desarrolladores: ahora está{" "}
-          <b>dentro de tu GPU, tus drivers y hasta tu sistema operativo</b>,
-          ayudando a que los juegos corran más fluidos, se vean mejor y usen
-          menos recursos.
+          Esta guía explica las diferencias y propone una forma de comparar
+          ajustes en tu propio equipo. No incluye benchmarks propios ni promete
+          un porcentaje de mejora: el resultado depende del juego, la GPU,
+          la resolución y la versión de cada tecnología.
         </p>
 
-        <h3>De la fuerza bruta a la inteligencia</h3>
+        <h2>Escalado: reconstruir una imagen de mayor resolución</h2>
         <p>
-          Antes, el rendimiento dependía casi por completo del{" "}
-          <b>poder físico del hardware</b>: más núcleos, más VRAM, relojes más
-          altos. Hoy, el rendimiento también depende de qué tan bien{" "}
-          <b>tu PC “entiende” lo que está pasando en pantalla</b>.
+          Un escalador permite renderizar a una resolución interna menor y
+          reconstruir la imagen que recibe tu monitor. Por ejemplo, un modo
+          puede partir de 1920 × 1080 para producir una salida de 3840 × 2160.
+          Es un ejemplo de resoluciones, no una equivalencia universal entre
+          los modos que cada juego llama Calidad o Rendimiento.
         </p>
-
         <p>
-          Tecnologías como <b>DLSS</b> (NVIDIA), <b>FSR</b> (AMD) o{" "}
-          <b>XeSS</b> (Intel) usan redes neuronales para reconstruir la imagen.
-          En lugar de renderizar cada cuadro a resolución completa, tu GPU
-          trabaja a una resolución más baja y la IA se encarga de{" "}
-          <b>“imaginar” los detalles que faltan</b>.
+          Dibujar menos píxeles puede aliviar la carga gráfica, aunque la propia
+          reconstrucción también tiene un coste. Si el límite principal está
+          en la CPU o tienes un tope de FPS activado, bajar la resolución interna
+          puede aportar mucho menos de lo que esperabas. No diagnostiques el
+          rendimiento mirando únicamente el nombre de tu tarjeta.
         </p>
 
+        <h2>DLSS, FSR y XeSS: comprueba la función y la versión</h2>
+        <ul>
+          <li><b>DLSS Super Resolution:</b> utiliza IA para reconstruir la imagen y está disponible en las familias GeForce RTX. La compatibilidad de Frame Generation es diferente: NVIDIA distingue RTX 40 y RTX 50 para esa función, y RTX 50 para Multi Frame Generation. Consulta la <a href="https://www.nvidia.com/en-us/geforce/technologies/dlss/">tabla oficial de funciones DLSS</a>, además de las opciones del juego.</li>
+          <li><b>FSR no siempre significa IA:</b> <a href="https://gpuopen.com/fidelityfx-superresolution-2/">FSR 2 utiliza algoritmos analíticos, sin aprendizaje automático</a>. FSR 3/3.1 también pertenece a la línea anterior a los escaladores basados en ML. En cambio, <a href="https://gpuopen.com/amd-fsr-upscaling/">FSR Upscaling 4 y posteriores emplean aprendizaje automático</a>. No extrapoles la compatibilidad de una versión a otra, ni la del escalado a la generación de fotogramas.</li>
+          <li><b>XeSS:</b> Intel separa Super Resolution, Frame Generation y Xe Low Latency. Su <a href="https://github.com/intel/xess">SDK oficial de XeSS</a> contempla también GPUs de otros fabricantes con los requisitos necesarios. Que el SDK lo permita no significa que todos los juegos hayan integrado esa versión o todas sus funciones.</li>
+        </ul>
         <p>
-          El resultado: <b>más FPS</b> con una calidad visual que, en muchos
-          casos, se ve igual o incluso mejor que el render nativo.
+          Busca el nombre completo en el menú y en las notas del juego. Una
+          actualización de la familia DLSS, FSR o XeSS no convierte automáticamente
+          una GPU en compatible con todas sus novedades. Para una comparación
+          más específica, consulta <a href="/articulos/posts/dlss-4-5-vs-fsr-redstone-2026">DLSS 4.5 frente a FSR Redstone</a>.
         </p>
 
-        {/* Imagen interna a mitad del artículo */}
-        <figure
-          className="article-image"
-          style={{
-            margin: "18px 0",
-            borderRadius: 14,
-            overflow: "hidden",
-            border: "1px solid var(--border)",
-          }}
-        >
-          <img
-            src="/articulos/mitad-ia-fps.png"
-            alt="Representación visual de IA optimizando FPS en tiempo real"
-            style={{ width: "100%", display: "block", objectFit: "cover" }}
-          />
-          <figcaption className="meta" style={{ padding: 8 }}>
-            La IA analiza la escena, ajusta resolución y genera cuadros
-            adicionales para aumentar los FPS sin perder calidad.
-          </figcaption>
+        <figure className="article-image" style={{ margin: "18px 0", borderRadius: 14, overflow: "hidden", border: "1px solid var(--border)" }}>
+          <img src="/articulos/mitad-ia-fps.png" alt="Ilustración de tecnologías de reconstrucción de imagen para juegos" style={{ width: "100%", display: "block", objectFit: "cover" }} />
+          <figcaption className="meta" style={{ padding: 8 }}>Ilustración conceptual. Escalado y generación de fotogramas pueden mejorar la fluidez, pero requieren evaluar la calidad de imagen y la respuesta del juego.</figcaption>
         </figure>
 
-        <h3>Más allá de los frames: rendimiento dinámico</h3>
+        <h2>Frame Generation: más imágenes, no la misma respuesta</h2>
         <p>
-          La IA no solo toca la imagen final. También ayuda a gestionar{" "}
-          <b>temperaturas, energía y cargas de trabajo</b>. Placas madre
-          modernas y software de fabricantes como ASUS, MSI o Gigabyte ya
-          incluyen perfiles que analizan el tipo de uso: no es lo mismo jugar
-          un shooter competitivo que editar un video en DaVinci Resolve.
+          La generación de fotogramas introduce imágenes adicionales a partir
+          de información de fotogramas renderizados. Eso puede suavizar el
+          movimiento visible, pero las imágenes generadas no equivalen a nuevos
+          pasos completos de simulación del juego.
+        </p>
+        <p>
+          <b>Ejemplo ilustrativo:</b> partir de 60 FPS renderizados y añadir
+          idealmente un fotograma entre cada par puede acercar la salida a
+          120 FPS. No significa que el control responda igual que a 120 FPS
+          renderizados. Además, la generación tiene coste, por lo que el número
+          real no tiene por qué ser exactamente el doble.
+        </p>
+        <p>
+          AMD recomienda aproximadamente <b>60 FPS antes de activar Frame
+          Generation en FSR 3/3.1</b> para una buena experiencia. Es una
+          recomendación de esa implementación, no una ley universal para todas
+          las tecnologías. Primero consigue una base estable y después valora
+          si generar imágenes mejora la sensación al jugar.
+          Véanse las <a href="https://gpuopen.com/learn/amd_fsr_3_1_release/">recomendaciones oficiales de FSR 3.1</a>.
         </p>
 
-        <p>
-          En un juego competitivo, el sistema prioriza estabilidad, baja
-          latencia y FPS altos. En un título más cinemático, la IA puede
-          privilegiar calidad visual y efectos avanzados, equilibrando cada
-          recurso para que la experiencia se vea “next-gen” sin romper el
-          rendimiento.
-        </p>
-
-        <h3>Ventajas que ya puedes notar</h3>
+        <h2>Latencia, fluidez y calidad: tres cosas que debes observar</h2>
         <ul>
-          <li>
-            <b>Más FPS sin cambiar de GPU:</b> activar DLSS/FSR/XeSS puede darte
-            un salto de rendimiento importante en resoluciones como 1440p o
-            4K.
-          </li>
-          <li>
-            <b>Menor consumo energético:</b> al no tener que renderizar cada
-            píxel, la GPU trabaja de forma más inteligente y eficiente.
-          </li>
-          <li>
-            <b>Juegos más estables:</b> menos caídas bruscas de FPS en escenas
-            pesadas.
-          </li>
-          <li>
-            <b>Calidad visual sorprendente:</b> la IA mantiene nitidez y detalle
-            incluso cuando el juego exige mucho al hardware.
-          </li>
+          <li><b>Latencia:</b> es el tiempo entre una entrada, como mover el ratón, y su resultado visible. Reflex, Anti-Lag o XeLL tienen objetivos distintos del escalado. Usa las opciones compatibles que recomiende la integración de tu juego.</li>
+          <li><b>Regularidad:</b> una media alta puede esconder pausas o tirones. Mira los tiempos de fotograma y, si tu herramienta los ofrece, los percentiles bajos de FPS. Compara siempre usando la misma medición.</li>
+          <li><b>Calidad en movimiento:</b> revisa contornos, cables, vegetación, partículas y elementos del HUD. Una captura quieta no revela todos los rastros, parpadeos o errores que pueden aparecer al mover la cámara.</li>
+        </ul>
+        <p>
+          En un shooter competitivo, empieza por una respuesta consistente y
+          una buena tasa de fotogramas renderizados. En un juego más pausado,
+          quizá prefieras la suavidad adicional de Frame Generation. Esa elección
+          depende de lo que notes al controlar el juego, no solo del contador.
+        </p>
+
+        <h2>Una comparación sencilla en tu propio PC</h2>
+        <ol>
+          <li><b>Fija las condiciones.</b> Anota resolución de salida, preset gráfico, ray tracing, límite de FPS, driver y versión del juego. Usa un benchmark integrado o repite el mismo recorrido.</li>
+          <li><b>Mide una referencia sin generación de fotogramas.</b> Empieza a resolución nativa con el antialiasing habitual del juego. Haz varias pasadas para no confundir una carga puntual con el rendimiento normal.</li>
+          <li><b>Activa solo el escalador.</b> Prueba Calidad y después Equilibrado si existe. Compara movimiento, detalle y FPS con la misma escena, manteniendo el resto de ajustes.</li>
+          <li><b>Prueba Frame Generation por separado.</b> Conserva el escalador elegido, activa la opción y comprueba si el giro de cámara y la respuesta del ratón te resultan cómodos.</li>
+          <li><b>Anota qué está contando la herramienta.</b> Identifica si muestra FPS renderizados o la salida con fotogramas generados. No compares esas dos cifras como si midieran exactamente lo mismo.</li>
+        </ol>
+        <p>
+          Una anotación útil puede ser: «1440p, Calidad, generación desactivada:
+          imagen nítida y respuesta cómoda; generación activada: movimiento más
+          suave, pero prefiero la respuesta anterior». Es un ejemplo de registro,
+          no el resultado de una prueba realizada por GridialHub.
+        </p>
+
+        <h2>Qué no conviene dar por hecho</h2>
+        <ul>
+          <li><b>No esperes que desaparezcan todos los tirones.</b> Problemas de compilación de shaders, falta de memoria o carga de recursos requieren revisar su causa; activar un escalador no garantiza resolverlos.</li>
+          <li><b>No asumas un ahorro eléctrico.</b> Si dejas los FPS sin límite, la GPU puede aprovechar el margen para producir más imágenes. Para comparar consumo, mantén el mismo objetivo de FPS y mide.</li>
+          <li><b>Una NPU no es un acelerador universal de juegos.</b> La aplicación debe utilizarla para una tarea compatible. Su presencia no demuestra que los FPS de tu juego vayan a aumentar.</li>
+          <li><b>No actualices la BIOS como ajuste rutinario de FPS.</b> Para esta comparación basta con revisar los requisitos del juego y el driver; una actualización de firmware debe responder a una necesidad concreta y a las instrucciones del fabricante.</li>
+          <li><b>No mezcles opciones sin comprobar la integración.</b> FSR 3.1 permite separar escalado y Frame Generation, incluso con escaladores de terceros. Eso no equivale a recomendar dos escaladores a la vez ni a acumular generación del juego y del driver.</li>
         </ul>
 
-        <h3>El papel del software y los drivers</h3>
+        <h2>Con qué ajuste quedarse</h2>
         <p>
-          Los drivers modernos ya no son simples “controladores”; muchos traen
-          modelos de IA integrados. Herramientas como{" "}
-          <b>GeForce Experience</b> o <b>AMD Adrenalin</b> permiten aplicar
-          ajustes recomendados para cada juego, activar escalado por IA y
-          controlar perfiles de rendimiento con un clic.
+          Quédate con la combinación que ofrezca una imagen aceptable, respuesta
+          cómoda y tiempos de fotograma estables en tus juegos habituales.
+          Si bajar resolución apenas cambia los FPS, investiga el límite antes
+          de reducir más la calidad. Si Frame Generation aumenta el contador
+          pero empeora tu control, desactívalo para ese título.
+        </p>
+        <p>
+          El escalado y la generación de fotogramas son herramientas distintas,
+          no una promesa de rendimiento gratuito. Entender esa diferencia
+          también ayuda a <a href="/articulos/posts/que-grafica-comprar-sin-botar-la-plata">elegir una GPU sin basarse solo en cifras publicitarias</a>.
         </p>
 
-        <p>
-          Además, sistemas como <b>Windows 11</b> y los procesadores{" "}
-          <b>Intel Core Ultra</b> o equivalentes con NPU empiezan a descargar
-          tareas de IA (filtros de video, cancelación de ruido, mejora de
-          imagen) a unidades especializadas, dejando al CPU y a la GPU libres
-          para el juego.
-        </p>
-
-        <h3>Limitaciones y realidad</h3>
-        <p>
-          Aunque parezca magia, la IA no es perfecta. Hay juegos donde la
-          generación de cuadros puede añadir algo de ghosting o artefactos.
-          También hay títulos que todavía no soportan estas tecnologías o que
-          requieren parches para funcionar bien.
-        </p>
-
-        <p>
-          Y, por supuesto, una GPU muy vieja o un PC mal refrigerado seguirán
-          teniendo sus propios límites. La IA{" "}
-          <b>optimiza lo que ya tienes, pero no hace milagros</b>.
-        </p>
-
-        <h3>¿Qué puedes hacer ahora mismo?</h3>
-        <ol>
-          <li>Actualiza tus drivers de GPU y, si es posible, la BIOS.</li>
-          <li>
-            Activa <b>DLSS, FSR o XeSS</b> en los juegos compatibles.
-          </li>
-          <li>
-            Revisa el panel de control de tu GPU: muchos incluyen modos
-            automáticos de “optimización inteligente”.
-          </li>
-          <li>
-            Mide tus FPS antes y después de activar estas funciones para ver el
-            impacto real.
-          </li>
-          <li>
-            Evita mezclar varias tecnologías de escalado a la vez; usa una bien
-            configurada en lugar de tres mal combinadas.
-          </li>
-        </ol>
-
-        <h3>Conclusión: tu PC ya piensa por ti</h3>
-        <p>
-          La inteligencia artificial no vino a reemplazar al gamer ni al
-          hardware, sino a <b>exprimir mejor cada componente</b>. Cada vez que
-          arrancas un juego moderno, hay sistemas analizando tu escena,
-          prediciendo lo que viene y ajustando recursos en tiempo real.
-        </p>
-
-        <p>
-          Para jugadores competitivos, streamers y creadores de contenido,
-          esto significa una cosa: <b>más estabilidad, mejores FPS y menos
-          tiempo peleando con menús de configuración</b>. Y esto es solo el
-          inicio. En los próximos años veremos GPUs y PCs cada vez más
-          “conscientes” del tipo de juego, de tu estilo y de lo que necesitas en
-          cada momento.
-        </p>
-
-        <p>
-          Así que, la próxima vez que notes que tu juego va más suave después
-          de una actualización de drivers, recuerda: tal vez no fue suerte, fue
-          la IA haciendo su trabajo en segundo plano.
-        </p>
+        <h2>Fuentes y revisión</h2>
+        <ul>
+          <li><a href="https://www.nvidia.com/en-us/geforce/technologies/dlss/">NVIDIA: funciones y compatibilidad de DLSS</a>.</li>
+          <li><a href="https://gpuopen.com/fidelityfx-superresolution-2/">AMD GPUOpen: funcionamiento de FSR 2</a>.</li>
+          <li><a href="https://gpuopen.com/learn/amd_fsr_3_1_release/">AMD GPUOpen: FSR 3.1 y recomendaciones de Frame Generation</a>.</li>
+          <li><a href="https://gpuopen.com/amd-fsr-upscaling/">AMD GPUOpen: FSR Upscaling basado en ML</a>.</li>
+          <li><a href="https://github.com/intel/xess">Intel: SDK y requisitos de XeSS</a>.</li>
+        </ul>
+        <p className="meta">Revisión documental del 12 de septiembre de 2026. Se han corregido las generalizaciones sobre FSR, latencia y optimización automática. Los ejemplos numéricos son ilustrativos; no son benchmarks propios.</p>
       </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
     </article>
   );
 }
