@@ -19,7 +19,7 @@ export default function sitemap() {
 
   const articleRoutes = posts.map((post) => ({
     url: `${baseUrl}${post.href}`,
-    lastModified: new Date(`${post.date}T00:00:00Z`),
+    lastModified: new Date(`${post.updatedDate || post.date}T00:00:00Z`),
     changeFrequency: "monthly",
     priority: 0.8,
   }));
