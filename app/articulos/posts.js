@@ -118,13 +118,12 @@ export const posts = [
 
   {
     slug: "posts/ia_fps",
-    title:
-      "Cómo la IA está optimizando tus FPS en tiempo real: el salto que da tu PC gamer",
+    title: "IA y FPS: qué hacen DLSS, FSR y XeSS y cómo configurarlos",
     date: "2025-11-14",
+    updatedDate: "2026-09-12",
     readingTime: "7 min de lectura",
-    meta: "14 de noviembre de 2025 · 7 min de lectura",
-    excerpt:
-      "La inteligencia artificial ya está dentro de tu GPU, tus drivers y tu sistema para darte más FPS, mejor calidad visual y menos lag. Te explico cómo funciona y cómo aprovecharla.",
+    meta: "14 de noviembre de 2025 · Actualizado el 12 de septiembre de 2026 · 7 min de lectura",
+    excerpt: "Diferencias entre escalado, generación de fotogramas y latencia. Aprende a comparar DLSS, FSR y XeSS sin confundir FPS mostrados con respuesta real.",
     href: "/articulos/posts/ia_fps",
     image: "/articulos/mitad-ia-fps.png",
     thumbnail: "/articulos/thumbs/mitad-ia-fps",
@@ -135,18 +134,18 @@ export const posts = [
 
   {
     slug: "posts/arc-raiders",
-    title: "ARC Raiders: cómo la IA está llevando el gameplay a otro nivel",
+    title: "ARC Raiders: cómo funciona la IA de los ARC y qué cambia al jugar",
     date: "2025-11-14",
-    readingTime: "7 min de lectura",
-    meta: "14 de noviembre de 2025 · 7 min de lectura",
-    excerpt:
-      "ARC Raiders combina acción cooperativa con inteligencia artificial avanzada para crear enfrentamientos dinámicos, impredecibles y desafiantes.",
+    updatedDate: "2026-09-12",
+    readingTime: "5 min de lectura",
+    meta: "14 de noviembre de 2025 · Actualizado el 12 de septiembre de 2026 · 5 min de lectura",
+    excerpt: "Qué sabemos de la IA de ARC Raiders: movimiento aprendido, combate PvPvE y consejos para decidir cuándo luchar, evitar máquinas o extraer.",
     href: "/articulos/posts/arc-raiders",
     image: "/articulos/thumbnail_ark_raiders_600x400.png",
     thumbnail: "/articulos/thumbs/thumbnail_ark_raiders_600x400",
     category: "Juegos",
     thumbClass: "thumb-game",
-    tags: ["ARC Raiders", "IA", "Shooter cooperativo"],
+    tags: ["ARC Raiders", "IA", "PvPvE"],
   },
 
   {
