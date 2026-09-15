@@ -3,7 +3,7 @@ import styles from "./page.module.css";
 
 const articlePath = "/articulos/posts/steam-frame-precio-caracteristicas-juegos";
 const articleUrl = `https://gridialhub.com${articlePath}`;
-const articleImage = "https://gridialhub.com/articulos/steam-frame-valve-2026.jpg";
+const articleImage = "https://gridialhub.com/articulos/steam-frame-experiencia-vr-hero.webp";
 const publishedAt = "2026-09-15T00:00:00Z";
 const title = "Steam Frame: precio, características y juegos del visor de Valve";
 const description = "Steam Frame desde US$1.059: especificaciones oficiales, reservas, juegos compatibles, uso con y sin PC y qué revisar antes de comprar el visor de Valve.";
@@ -33,7 +33,7 @@ export const metadata = {
     locale: "es_ES",
     publishedTime: publishedAt,
     modifiedTime: publishedAt,
-    images: [{ url: articleImage, width: 1232, height: 706, alt: "Steam Frame y sus dos controles en una imagen oficial de Valve" }],
+    images: [{ url: articleImage, width: 1672, height: 941, alt: "Ilustración conceptual de una persona usando un visor de realidad virtual inspirado en Steam Frame" }],
   },
   twitter: { card: "summary_large_image", title, description, images: [articleImage] },
 };
@@ -92,8 +92,8 @@ export default function SteamFramePage() {
         </header>
 
         <figure className={styles.hero}>
-          <img src="/articulos/steam-frame-valve-2026.jpg" width="1232" height="706" fetchPriority="high" alt="Visor negro Steam Frame acompañado de sus dos controles, sobre fondo blanco" />
-          <figcaption>Steam Frame y sus controles. Imagen oficial de Valve publicada en la <Source href={sources.product}>ficha del producto</Source>.</figcaption>
+          <img src="/articulos/steam-frame-experiencia-vr-hero.webp" width="1672" height="941" fetchPriority="high" alt="Una persona disfruta de la realidad virtual con un visor negro y dos controles en una habitación de gaming" />
+          <figcaption>Ilustración conceptual generada con IA para GridialHub, inspirada en la experiencia de usar Steam Frame.</figcaption>
         </figure>
 
         <div className={styles.content}>
@@ -158,6 +158,10 @@ export default function SteamFramePage() {
           <section aria-labelledby="especificaciones">
             <h2 id="especificaciones">Especificaciones oficiales de Steam Frame</h2>
             <p>Estos son los datos de la <Source href={sources.product}>ficha de Valve</Source> consultada el 15 de septiembre:</p>
+            <figure className={styles.product}>
+              <img src="/articulos/steam-frame-valve-2026.jpg" width="1232" height="706" loading="lazy" decoding="async" alt="Diseño oficial del visor Steam Frame y sus dos controles, sobre fondo blanco" />
+              <figcaption>Diseño del dispositivo y sus controles. Imagen oficial de <Source href={sources.product}>Valve</Source>.</figcaption>
+            </figure>
             <div className={`${styles.tableWrap} ${styles.specs}`} role="region" aria-label="Especificaciones de Steam Frame" tabIndex={0}>
               <table>
                 <caption>Hardware anunciado por Valve</caption>

@@ -9,8 +9,8 @@ export const posts = [
     excerpt:
       "Precio y especificaciones oficiales de Steam Frame: reservas, juegos compatibles, diferencias entre streaming y modo autónomo y qué revisar antes de comprar.",
     href: "/articulos/posts/steam-frame-precio-caracteristicas-juegos",
-    image: "/articulos/steam-frame-valve-2026.jpg",
-    thumbnail: "/articulos/thumbs/steam-frame-valve-2026",
+    image: "/articulos/steam-frame-experiencia-vr-hero.webp",
+    thumbnail: "/articulos/thumbs/steam-frame-experiencia-vr-hero",
     category: "Hardware",
     thumbClass: "thumb-game",
     tags: ["Steam Frame", "Valve", "Realidad virtual", "SteamOS", "PC gamer"],

@@ -38,6 +38,9 @@
 .hero img { width: 100%; height: auto; display: block; border-radius: 12px; }
 .hero a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
 .hero figcaption { margin-top: 10px; color: #b1b2bd; font-size: .8125rem; line-height: 1.5; }
+.product { max-width: 620px; margin: 24px auto; }
+.product img { width: 100%; height: auto; display: block; border-radius: 12px; }
+.product figcaption { margin-top: 10px; color: #b1b2bd; font-size: .8125rem; line-height: 1.5; }
 .content { max-width: 740px; margin-inline: auto; font-size: 1rem; line-height: 1.8; overflow-wrap: break-word; }
 .content p, .content li { line-height: 1.8; }
 .content p { margin: 0 0 18px; }
@@ -67,12 +70,6 @@
 .specs table { min-width: 0; }
 .specs tbody th { width: 34%; }
 .specs tr:first-child th, .specs tr:first-child td { border-top: 0; }
-.troubleshooting { margin: 0; }
-.troubleshooting > div { padding: 18px 0; border-bottom: 1px solid var(--border); }
-.troubleshooting > div:first-child { padding-top: 0; }
-.troubleshooting dt { font-weight: 700; color: #f1d9f4; margin-bottom: 7px; }
-.troubleshooting dd { margin: 0; }
-.troubleshooting + p { margin-top: 22px; }
 .related { padding: 24px; margin-top: 38px; border: 1px solid #493053; border-radius: 12px; }
 .sources { border-top: 1px solid var(--border); padding-top: 30px; font-size: .9375rem; color: #c4c4d0; }
 .sources ul { margin-bottom: 24px; }
