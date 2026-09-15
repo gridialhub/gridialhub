@@ -1,6 +1,22 @@
 // app/articulos/posts.js
 export const posts = [
   {
+    slug: "posts/steam-frame-precio-caracteristicas-juegos",
+    title: "Steam Frame: precio, características y juegos del visor de Valve",
+    date: "2026-09-15",
+    readingTime: "9 min de lectura",
+    meta: "15 de septiembre de 2026 · 9 min de lectura",
+    excerpt:
+      "Precio y especificaciones oficiales de Steam Frame: reservas, juegos compatibles, diferencias entre streaming y modo autónomo y qué revisar antes de comprar.",
+    href: "/articulos/posts/steam-frame-precio-caracteristicas-juegos",
+    image: "/articulos/steam-frame-valve-2026.jpg",
+    thumbnail: "/articulos/thumbs/steam-frame-valve-2026",
+    category: "Hardware",
+    thumbClass: "thumb-game",
+    tags: ["Steam Frame", "Valve", "Realidad virtual", "SteamOS", "PC gamer"],
+  },
+
+  {
     slug: "posts/twitch-dual-format-obs-streaming-vertical-horizontal",
     title:
       "Cómo hacer streaming vertical y horizontal en Twitch con OBS: guía de Dual Format",
