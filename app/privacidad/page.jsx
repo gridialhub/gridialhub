@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CookieSettingsButton from "../components/CookieSettingsButton";
 
 export const metadata = {
   title: "Política de Privacidad",
@@ -9,7 +10,7 @@ export const metadata = {
   },
 };
 
-const ultimaActualizacion = "09 de septiembre de 2026";
+const ultimaActualizacion = "18 de septiembre de 2026";
 
 export default function Privacidad() {
   return (
@@ -66,7 +67,7 @@ export default function Privacidad() {
           <li>
             <b>Datos técnicos y de uso</b>: información técnica de conexión,
             tipo de navegador, dispositivo, sistema operativo, páginas
-            visitadas, referencia y métricas anónimas/aglomeradas para
+            visitadas, referencia, identificadores de cookies cuando aceptas la analítica y métricas agregadas para
             estadísticas y rendimiento.
           </li>
           <li>
@@ -108,21 +109,59 @@ export default function Privacidad() {
             preferencias básicas.
           </li>
           <li>
-            <b>Métricas (Analytics):</b> Google Analytics se carga únicamente
+            <b>Analítica opcional (Google Analytics):</b> Google Analytics se carga únicamente
             después de que aceptes las cookies de analítica en el aviso de
             preferencias. Si las rechazas, el sitio seguirá funcionando.
           </li>
           <li>
-            <b>Publicidad — cuando esté activa:</b> podrían emplearse cookies o
-            identificadores para mostrar anuncios y limitar su frecuencia. Puedes
-            gestionar preferencias desde la configuración de tu navegador o la
-            plataforma publicitaria correspondiente.
+            <b>Publicidad:</b> actualmente no mostramos anuncios de Google AdSense.
+            Aceptar la analítica no autoriza cookies de publicidad ni anuncios personalizados.
           </li>
         </ul>
         <p className="meta">
           Guardamos tu elección de analítica en el almacenamiento local del
           navegador. Puedes cambiarla en cualquier momento desde
           “Preferencias de cookies” en el pie de página.
+        </p>
+        <p>
+          La preferencia se conserva en este navegador hasta que la cambies o
+          borres los datos del sitio. Si el navegador impide guardarla, se
+          aplicará durante la visita y volveremos a preguntarte al cargar la web.
+          Las cookies de Google Analytics, como <code>_ga</code> y las que
+          comienzan por <code>_ga_</code>, permiten distinguir visitas y sesiones.
+          Puedes consultar sus duraciones y usos en la{" "}
+          <a href="https://developers.google.com/analytics/devguides/collection/ga4/cookie-usage?hl=es" target="_blank" rel="noopener noreferrer">documentación de Google Analytics</a>.
+        </p>
+        <p>
+          Si retiras el permiso, desactivamos la recogida de datos de Analytics
+          y eliminamos las cookies de analítica accesibles desde nuestro sitio.
+          Esto no borra los datos enviados anteriormente. También puedes borrar
+          las cookies y el almacenamiento local desde tu navegador.
+        </p>
+        <CookieSettingsButton />
+
+        <h3>Publicidad con Google AdSense, cuando se active</h3>
+        <p>
+          Si incorporamos AdSense, Google y otros proveedores publicitarios podrán
+          utilizar cookies, balizas web, direcciones IP y otros identificadores
+          para publicar y medir anuncios. Las cookies publicitarias permiten a
+          Google y sus partners mostrar anuncios basados en tus visitas a
+          GridialHub y a otros sitios de Internet, según tus preferencias y los
+          requisitos de consentimiento aplicables.
+        </p>
+        <p>
+          Puedes gestionar o desactivar la personalización de anuncios de Google
+          en <a href="https://myadcenter.google.com/" target="_blank" rel="noopener noreferrer">Mi centro de anuncios</a>.
+          Para otros proveedores participantes, puedes consultar las opciones de{" "}
+          <a href="https://optout.aboutads.info/" target="_blank" rel="noopener noreferrer">exclusión de publicidad personalizada</a>.
+          Desactivar la personalización no significa necesariamente dejar de ver anuncios.
+        </p>
+        <p>
+          Antes de activar publicidad personalizada para visitantes del Espacio
+          Económico Europeo, Reino Unido o Suiza, configuraremos una plataforma
+          de gestión del consentimiento certificada por Google. Allí se podrán
+          consultar los proveedores y elegir o retirar los permisos publicitarios.
+          El aviso de analítica actual no sustituye ese consentimiento.
         </p>
       </section>
 
@@ -141,6 +180,14 @@ export default function Privacidad() {
           sujetos a compromisos de seguridad y privacidad acordes con los
           estándares de la industria.
         </p>
+        <p>
+          Cuando aceptas la analítica, Google recibe información de uso de la
+          web para prestar el servicio de Analytics. Consulta{" "}
+          <a href="https://policies.google.com/technologies/partner-sites?hl=es" target="_blank" rel="noopener noreferrer">cómo utiliza Google los datos de sitios que usan sus servicios</a>{" "}
+          y su <a href="https://policies.google.com/privacy?hl=es" target="_blank" rel="noopener noreferrer">política de privacidad</a>.
+          Si activamos publicidad, actualizaremos esta política y las opciones de
+          consentimiento para reflejar los servicios y proveedores utilizados.
+        </p>
       </section>
 
       {/* 6) CONSERVACIÓN */}
@@ -156,7 +203,7 @@ export default function Privacidad() {
             auditoría y prevención de fraude.
           </li>
           <li>
-            <b>Métricas anónimas:</b> según políticas del proveedor de
+            <b>Datos de analítica:</b> según la configuración de conservación y las políticas del proveedor de
             analítica.
           </li>
         </ul>
