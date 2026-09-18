@@ -11,6 +11,19 @@ function disableAnalytics(disabled) {
   window[`ga-disable-${GA_ID}`] = disabled;
 }
 
+function updateAnalyticsConsent(granted, command = "update") {
+  // Se prepara la cola local antes de cargar Google; esto no descarga etiquetas.
+  disableAnalytics(!granted);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+  window.gtag("consent", command, {
+    analytics_storage: granted ? "granted" : "denied",
+    ad_storage: "denied",
+    ad_user_data: "denied",
+    ad_personalization: "denied",
+  });
+}
+
 function clearAnalyticsCookies() {
   document.cookie.split(";").forEach((cookie) => {
     const name = cookie.split("=")[0].trim();
@@ -27,6 +40,7 @@ export default function AnalyticsConsent() {
   const [showPreferences, setShowPreferences] = useState(false);
 
   useEffect(() => {
+    updateAnalyticsConsent(false, "default");
     let saved = null;
 
     try {
@@ -39,15 +53,26 @@ export default function AnalyticsConsent() {
 
     if (saved === "granted" || saved === "denied") {
       setConsent(granted);
-      disableAnalytics(!granted);
+      updateAnalyticsConsent(granted);
+      if (!granted) clearAnalyticsCookies();
     }
 
     setReady(true);
 
     const openPreferences = () => setShowPreferences(true);
+    const syncPreferences = (event) => {
+      if (event.key !== CONSENT_KEY && event.key !== null) return;
+      const granted = event.newValue === "granted";
+      updateAnalyticsConsent(granted);
+      if (!granted) clearAnalyticsCookies();
+      setConsent(event.newValue === "granted" || event.newValue === "denied" ? granted : null);
+    };
     window.addEventListener("gridialhub:cookie-settings", openPreferences);
-    return () =>
+    window.addEventListener("storage", syncPreferences);
+    return () => {
       window.removeEventListener("gridialhub:cookie-settings", openPreferences);
+      window.removeEventListener("storage", syncPreferences);
+    };
   }, []);
 
   const choose = (granted) => {
@@ -57,7 +82,7 @@ export default function AnalyticsConsent() {
       // La elección sigue aplicándose durante la sesión aunque no pueda persistirse.
     }
 
-    disableAnalytics(!granted);
+    updateAnalyticsConsent(granted);
     if (!granted) clearAnalyticsCookies();
     setConsent(granted);
     setShowPreferences(false);
@@ -80,27 +105,34 @@ export default function AnalyticsConsent() {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', '${GA_ID}', { anonymize_ip: true });
+              gtag('config', '${GA_ID}', {
+                allow_google_signals: false,
+                allow_ad_personalization_signals: false
+              });
             `}
           </Script>
         </>
       )}
 
       {shouldAsk && (
-        <div className="cookie-banner" role="dialog" aria-label="Preferencias de cookies">
+        <div className="cookie-banner" role="dialog" aria-labelledby="cookie-title" aria-describedby="cookie-description">
           <div>
-            <strong>Cookies de analítica</strong>
-            <p>
-              GridialHub usa Google Analytics solo si lo autorizas para medir visitas y mejorar el sitio. Puedes rechazarlo sin afectar el funcionamiento de la web. Consulta la{" "}
+            <strong id="cookie-title">Tú eliges las cookies de analítica</strong>
+            <p id="cookie-description">
+              Con tu permiso, Google Analytics utiliza cookies para medir las visitas.
+              Puedes aceptar o rechazar la analítica y seguir usando toda la web.
+              Esta elección no autoriza publicidad personalizada. Consulta la{" "}
               <Link href="/privacidad">Política de Privacidad</Link>.
             </p>
+            <p>Puedes cambiar tu elección desde «Preferencias de cookies», al final de cualquier página.</p>
+            {showPreferences && <p>Analítica: {consent === true ? "aceptada" : consent === false ? "rechazada" : "sin elegir"}.</p>}
           </div>
           <div className="cookie-actions">
             <button type="button" className="btn btn-secondary" onClick={() => choose(false)}>
-              Rechazar
+              Rechazar analítica
             </button>
-            <button type="button" className="btn" onClick={() => choose(true)}>
-              Aceptar
+            <button type="button" className="btn btn-secondary" onClick={() => choose(true)}>
+              Aceptar analítica
             </button>
           </div>
         </div>
