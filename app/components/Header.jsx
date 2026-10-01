@@ -10,6 +10,7 @@ const links = [
   { href: "/sorteos", label: "Sorteos" },
   { href: "/resultados", label: "Resultados" },
   { href: "/bases", label: "Bases" },
+  { href: "/sobre-gridial", label: "Sobre Gridial" },
   { href: "/contacto", label: "Contacto" },
 ];
 

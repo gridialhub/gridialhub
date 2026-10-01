@@ -31,7 +31,7 @@ export default function ArticleGrid({ posts, headingLevel = 2, eagerFirst = fals
               <span className={styles.category}>{post.category || post.tags?.[0] || "Guías"}</span>
               <Heading className={styles.title}>{post.title}</Heading>
               <p className={styles.meta}>
-                <time dateTime={post.date}>{dateFormat.format(new Date(`${post.date}T00:00:00Z`))}</time>
+                <time dateTime={post.updatedDate || post.date}>{post.updatedDate ? "Actualizado: " : ""}{dateFormat.format(new Date(`${post.updatedDate || post.date}T00:00:00Z`))}</time>
                 <span aria-hidden="true">·</span>
                 <span>{post.readingTime}</span>
               </p>

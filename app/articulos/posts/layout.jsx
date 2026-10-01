@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function ArticlesLayout({ children }) { return <>{children}<aside className="card article-page editorial-author" aria-label="Autoría y correcciones"><p><b>GridialHub, por <Link href="/sobre-gridial">Gridial</Link></b></p><p>Guías de PC, hardware y streaming. <Link href="/sobre-gridial">Conoce nuestros criterios editoriales</Link> o <Link href="/contacto">avisa de un error</Link> indicando el artículo y la información que debemos revisar.</p></aside></>; }

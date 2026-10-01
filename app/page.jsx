@@ -54,12 +54,13 @@ export default function Home() {
           </p>
 
           <Link
-            href="/sorteos"
+            href="/articulos"
             className="btn"
             style={{ fontSize: 18, padding: "12px 28px", borderRadius: 12 }}
           >
-            Ver cómo participar en los sorteos
+            Explorar las guías
           </Link>
+          <Link href="/sobre-gridial" style={{ textDecoration: "underline" }}>Conoce a Gridial y cómo preparamos las guías</Link>
         </div>
       </section>
 
