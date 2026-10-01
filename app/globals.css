@@ -719,3 +719,21 @@ a, button {
     padding: 36px 18px !important;
   }
 }
+
+/* Editorial content uses the existing site palette. */
+.editorial-article { padding: clamp(18px, 4vw, 36px); display: grid; gap: 20px; min-width: 0; }
+.editorial-article h1 { font-size: clamp(26px, 4vw, 38px); line-height: 1.2; overflow-wrap: anywhere; }
+.editorial-article figure { margin: 0; min-width: 0; }
+.editorial-article .meta { font-size: 13px; line-height: 1.7; }
+.editorial-back { display: inline-block; margin-bottom: 20px; }
+.editorial-article .article-content h2 { margin-top: 32px; font-size: clamp(21px, 3vw, 27px); }
+.editorial-article .article-content h3 { margin-top: 24px; }
+.editorial-article a, .editorial-author a { color: var(--brand); text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.editorial-table { max-width: 100%; overflow-x: auto; margin: 20px 0; border: 1px solid var(--border); border-radius: 10px; }
+.editorial-table table { width: 100%; border-collapse: collapse; min-width: 460px; }
+.editorial-table th, .editorial-table td { text-align: left; padding: 12px; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.5; }
+.editorial-table th { background: #23232b; }
+.editorial-table caption { text-align: left; padding: 12px; color: var(--muted); }
+.editorial-author { margin: 24px auto; }
+.editorial-author p { margin: 8px 0; }
+.cookie-banner { max-height: calc(100dvh - 32px); overflow-y: auto; }

@@ -14,9 +14,10 @@ export default function Footer() {
         }}
       >
         <div>
-          © {new Date().getFullYear()} GridialHub — Comunidad gaming y sorteos
+          © {new Date().getFullYear()} GridialHub — Guías de PC, hardware y streaming
         </div>
         <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+          <Link href="/sobre-gridial">Sobre Gridial</Link>
           <Link href="/bases">Bases</Link>
           <Link href="/privacidad">Política de Privacidad</Link>
           <Link href="/terminos">Términos y Condiciones</Link>

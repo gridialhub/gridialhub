@@ -7,17 +7,17 @@ import AnalyticsConsent from "./components/AnalyticsConsent";
 export const metadata = {
   metadataBase: new URL("https://gridialhub.com"),
   title: {
-    default: "GridialHub — Comunidad & Sorteos Gaming",
+    default: "GridialHub — Guías de PC, hardware y streaming",
     template: "%s | GridialHub",
   },
   description:
-    "Comunidad gamer con sorteos, artículos de videojuegos/tecnología y eventos en vivo.",
+    "Guías de hardware, rendimiento en PC y streaming. Aprende a comparar componentes, configurar tus directos y entender las tecnologías de juego.",
   alternates: { canonical: "/" },
   robots: { index: true, follow: true },
   openGraph: {
-    title: "GridialHub — Comunidad & Sorteos Gaming",
+    title: "GridialHub — Guías de PC, hardware y streaming",
     description:
-      "Sorteos transparentes, artículos, tecnología y comunidad gamer global.",
+      "Guías de PC, hardware y streaming para la comunidad de Gridial.",
     url: "/", // usa metadataBase como base
     siteName: "GridialHub",
     locale: "es_ES",
@@ -33,7 +33,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "GridialHub — Comunidad & Sorteos Gaming",
+    title: "GridialHub — Guías de PC, hardware y streaming",
     description:
       "Artículos de gaming, hardware y sorteos para la comunidad de Gridial.",
     images: ["/gridialhub-og.png"],

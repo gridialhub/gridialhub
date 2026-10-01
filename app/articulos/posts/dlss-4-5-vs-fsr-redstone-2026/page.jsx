@@ -820,7 +820,7 @@ export default function Dlss45VsFsrRedstone2026Page() {
               href="/articulos/posts/que-grafica-comprar-sin-botar-la-plata"
               style={sourceLinkStyle}
             >
-              qué tarjeta gráfica comprar en 2026 sin botar la plata
+              cómo elegir una tarjeta gráfica según tu equipo y presupuesto
             </Link>
             . También explicamos de forma más general cómo la{" "}
             <Link href="/articulos/posts/ia_fps" style={sourceLinkStyle}>

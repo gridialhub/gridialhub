@@ -89,7 +89,7 @@ export default function Sorteos() {
             color: "var(--muted)",
           }}
         >
-          Sorteo finalizado • Navidad 2025 • $200 en premios
+          Sorteo finalizado • Navidad 2025 • $200 anunciados
         </div>
 
         {/* Título */}
@@ -131,12 +131,14 @@ export default function Sorteos() {
             }}
           >
             Para agradecer todo el apoyo, realicé un sorteo especial para la
-            comunidad con <b>$200 repartidos entre 3 ganadores</b> el
+            comunidad con <b>tres premios anunciados por un total de $200</b> el
             <b> 20 de diciembre de 2025</b>.
             <br />
             <br />
-            🥇 <b>1er lugar:</b> $100 &nbsp;•&nbsp; 🥈 <b>2do lugar:</b> $50
+            🥇 <b>1er premio:</b> $100 — sin ganador &nbsp;•&nbsp; 🥈 <b>2do lugar:</b> $50
             &nbsp;•&nbsp; 🥉 <b>3er lugar:</b> $50
+            <br />
+            El segundo premio corresponde a Alexandra Villa y el tercero a David Acosta. Los premios con ganador suman $100; el primer premio no tuvo ganador.
             <br />
             <br />
             Participaron seguidores de <b>TikTok</b>, <b>Twitch</b>,{" "}

@@ -52,12 +52,12 @@ export const posts = [
 
   {
     slug: "posts/que-bitrate-usar-obs-tiktok-twitch-youtube-2026",
-    title: "Qué bitrate usar en OBS para TikTok, Twitch y YouTube en 2026",
+    title: "Qué bitrate usar en OBS para Twitch, YouTube y TikTok",
     date: "2025-11-23",
-    readingTime: "9 min de lectura",
-    meta: "23 de noviembre de 2025 · 9 min de lectura",
-    excerpt:
-      "Te explico qué bitrate usar en OBS para TikTok, Twitch y YouTube en 2026 según tu velocidad de subida, resolución y FPS, sin reventar tu conexión ni tu stream.",
+    updatedDate: "2026-10-01",
+    readingTime: "4 min de lectura",
+    meta: "Actualizado el 1 de octubre de 2026",
+    excerpt: "Bitrate por plataforma y códec, diferencias entre Twitch y YouTube y cómo comprobar los límites de TikTok antes de emitir.",
     href: "/articulos/posts/que-bitrate-usar-obs-tiktok-twitch-youtube-2026",
     image: "/articulos/banner-bitrate-obs-2026.png",
     thumbnail: "/articulos/thumbs/banner-bitrate-obs-2026",
@@ -68,13 +68,12 @@ export const posts = [
 
   {
     slug: "posts/mejor-configuracion-helldivers-2-2026",
-    title:
-      "Mejor configuración de Helldivers 2 en PC en 2026: más FPS y mejor puntería",
+    title: "Helldivers 2 en PC: cómo ajustar gráficos y diagnosticar los tirones",
     date: "2025-11-22",
-    readingTime: "9 min de lectura",
-    meta: "22 de noviembre de 2025 · 9 min de lectura",
-    excerpt:
-      "Te dejo una configuración recomendada de gráficos y controles para Helldivers 2 en PC en 2026: más FPS, mejor visibilidad y una puntería más cómoda sin perder calidad.",
+    updatedDate: "2026-10-01",
+    readingTime: "4 min de lectura",
+    meta: "Actualizado el 1 de octubre de 2026",
+    excerpt: "Guía de diagnóstico para Helldivers 2: comparar ajustes, separar problemas de red y rendimiento, probar controles y registrar cambios sin prometer FPS.",
     href: "/articulos/posts/mejor-configuracion-helldivers-2-2026",
     image: "/articulos/banner-helldivers2-2026.png",
     thumbnail: "/articulos/thumbs/banner-helldivers2-2026",
@@ -85,12 +84,12 @@ export const posts = [
 
   {
     slug: "posts/configuracion-obs-stream-grabacion",
-    title: "Configuración de OBS en 2026 para stream y grabación sin perder FPS",
+    title: "Configuración de OBS: streaming, grabación y diagnóstico de rendimiento",
     date: "2025-11-21",
-    readingTime: "10 min de lectura",
-    meta: "21 de noviembre de 2025 · 10 min de lectura",
-    excerpt:
-      "Guía paso a paso para configurar OBS en 2026 para streaming y grabación con buena calidad sin matar los FPS de tus juegos.",
+    updatedDate: "2026-10-01",
+    readingTime: "4 min de lectura",
+    meta: "Actualizado el 1 de octubre de 2026",
+    excerpt: "Separa emisión y grabación en OBS, elige el control de calidad correcto y distingue problemas de red, renderizado y codificación.",
     href: "/articulos/posts/configuracion-obs-stream-grabacion",
     image: "/articulos/banner-obs-2026.png",
     thumbnail: "/articulos/thumbs/banner-obs-2026",
@@ -101,13 +100,12 @@ export const posts = [
 
   {
     slug: "posts/nuevo-hardware-steam-2026",
-    title:
-      "El nuevo hardware de Steam que llega en 2026: Steam Machine, Steam Frame y Steam Controller",
+    title: "Steam Machine, Steam Frame y Steam Controller: qué función cumple cada uno",
     date: "2025-11-15",
-    readingTime: "8 min de lectura",
-    meta: "15 de noviembre de 2025 · 8 min de lectura",
-    excerpt:
-      "Repaso completo al nuevo hardware de Steam que llega en 2026: Steam Machine, Steam Frame y la segunda generación del Steam Controller, y qué significan para los jugadores de PC.",
+    updatedDate: "2026-10-01",
+    readingTime: "4 min de lectura",
+    meta: "Actualizado el 1 de octubre de 2026",
+    excerpt: "Diferencias entre el equipo de salón, el visor y el mando de Valve: dónde se ejecutan los juegos y qué comprobar antes de elegir.",
     href: "/articulos/posts/nuevo-hardware-steam-2026",
     image: "/articulos/banner-steam-hardware-2026.png",
     thumbnail: "/articulos/thumbs/banner-steam-hardware-2026",
@@ -118,12 +116,12 @@ export const posts = [
 
   {
     slug: "posts/como-optimizar-windows-11-para-juegos",
-    title: "Cómo optimizar Windows 11 para juegos en 2025 (sin romper tu PC)",
+    title: "Windows 11 para jugar: ajustes y comprobaciones de rendimiento",
     date: "2025-11-15",
-    readingTime: "9 min de lectura",
-    meta: "15 de noviembre de 2025 · 9 min de lectura",
-    excerpt:
-      "Guía práctica para optimizar Windows 11 para juegos en 2025: ajustes clave para más FPS y menos stuttering sin arruinar tu sistema.",
+    updatedDate: "2026-10-01",
+    readingTime: "4 min de lectura",
+    meta: "Actualizado el 1 de octubre de 2026",
+    excerpt: "Cómo revisar Windows Update, aplicaciones de inicio, pantalla y gráficos sin prometer mejoras universales ni desactivar la seguridad.",
     href: "/articulos/posts/como-optimizar-windows-11-para-juegos",
     image: "/articulos/banner-windows-11-gaming.png",
     thumbnail: "/articulos/thumbs/banner-windows-11-gaming",
@@ -166,12 +164,12 @@ export const posts = [
 
   {
     slug: "posts/que-grafica-comprar-sin-botar-la-plata",
-    title: "Qué tarjeta gráfica comprar en 2026 sin botar la plata",
+    title: "Cómo elegir una tarjeta gráfica: monitor, presupuesto y compatibilidad",
     date: "2026-05-06",
-    readingTime: "8 min de lectura",
-    meta: "06 de mayo de 2026 · 8 min de lectura",
-    excerpt:
-      "Guía clara para elegir la GPU correcta según tu monitor, tus juegos y tu presupuesto, evitando el sobreprecio y el marketing vacío.",
+    updatedDate: "2026-10-01",
+    readingTime: "4 min de lectura",
+    meta: "Actualizado el 1 de octubre de 2026",
+    excerpt: "Un método para comparar GPU: rendimiento nativo, VRAM, costo total y compatibilidad, con un ejemplo numérico y una ficha de compra.",
     href: "/articulos/posts/que-grafica-comprar-sin-botar-la-plata",
     image: "/articulos/duda-sobre-tarjeta.png",
     thumbnail: "/articulos/thumbs/duda-sobre-tarjeta",

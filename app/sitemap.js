@@ -11,6 +11,7 @@ export default function sitemap() {
     { path: "/bases", changeFrequency: "monthly", priority: 0.6 },
     { path: "/privacidad", changeFrequency: "yearly", priority: 0.4 },
     { path: "/terminos", changeFrequency: "yearly", priority: 0.4 },
+    { path: "/sobre-gridial", changeFrequency: "monthly", priority: 0.5 },
     { path: "/contacto", changeFrequency: "monthly", priority: 0.5 },
   ].map(({ path, ...metadata }) => ({
     url: `${baseUrl}${path}`,
