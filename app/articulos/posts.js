@@ -1,6 +1,28 @@
 // app/articulos/posts.js
 export const posts = [
   {
+    "slug": "posts/8-12-16-gb-vram-gaming-2026",
+    "title": "¿Son suficientes 8 GB de VRAM en 2026? Cuándo elegir 12 o 16 GB",
+    "date": "2026-10-10",
+    "readingTime": "13 min de lectura",
+    "meta": "10 de octubre de 2026 · 13 min de lectura",
+    "excerpt": "Pruebas y requisitos de VRAM para gaming: cuándo bastan 16 GB, qué aportan 32 GB y cómo diagnosticar si tu PC necesita una ampliación.",
+    "href": "/articulos/posts/8-12-16-gb-vram-gaming-2026",
+    "image": "/articulos/vram-8-12-16-gb-2026.webp",
+    "thumbnail": "/articulos/thumbs/vram-8-12-16-gb-2026",
+    "category": "Hardware",
+    "thumbClass": "thumb-pc",
+    "tags": [
+      "VRAM",
+      "8 GB",
+      "12 GB",
+      "16 GB",
+      "GPU",
+      "PC gamer"
+    ]
+  },
+
+  {
     "slug": "posts/16-gb-vs-32-gb-ram-gaming-2026",
     "title": "¿16 GB o 32 GB de RAM para jugar en 2026? Cuándo merece la pena actualizar",
     "date": "2026-10-09",
