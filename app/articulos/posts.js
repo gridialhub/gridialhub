@@ -1,6 +1,28 @@
 // app/articulos/posts.js
 export const posts = [
   {
+    "slug": "posts/16-gb-vs-32-gb-ram-gaming-2026",
+    "title": "¿16 GB o 32 GB de RAM para jugar en 2026? Cuándo merece la pena actualizar",
+    "date": "2026-10-09",
+    "readingTime": "11 min de lectura",
+    "meta": "9 de octubre de 2026 · 11 min de lectura",
+    "excerpt": "Pruebas y requisitos de RAM para gaming: cuándo bastan 16 GB, qué aportan 32 GB y cómo diagnosticar si tu PC necesita una ampliación.",
+    "href": "/articulos/posts/16-gb-vs-32-gb-ram-gaming-2026",
+    "image": "/articulos/ram-16-vs-32-gb-2026.webp",
+    "thumbnail": "/articulos/thumbs/ram-16-vs-32-gb-2026",
+    "category": "Hardware",
+    "thumbClass": "thumb-pc",
+    "tags": [
+      "RAM",
+      "16 GB",
+      "32 GB",
+      "DDR4",
+      "DDR5",
+      "PC gamer"
+    ]
+  },
+
+  {
     slug: "posts/steam-frame-precio-caracteristicas-juegos",
     title: "Steam Frame: precio, características y juegos del visor de Valve",
     date: "2026-09-15",
