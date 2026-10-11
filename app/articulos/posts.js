@@ -1,6 +1,28 @@
 // app/articulos/posts.js
 export const posts = [
   {
+    "slug": "posts/stuttering-buenos-fps-pc",
+    "title": "¿Por qué los juegos dan tirones aunque tengas buenos FPS? Guía para identificar el stuttering en PC",
+    "date": "2026-10-10",
+    "readingTime": "12 min de lectura",
+    "meta": "10 de octubre de 2026 · 12 min de lectura",
+    "excerpt": "Pruebas y requisitos de Tirones en juegos: cuándo bastan 16 GB, qué aportan 32 GB y cómo diagnosticar si tu PC necesita una ampliación.",
+    "href": "/articulos/posts/stuttering-buenos-fps-pc",
+    "image": "/articulos/stuttering-buenos-fps-pc.webp",
+    "thumbnail": "/articulos/thumbs/stuttering-buenos-fps-pc",
+    "category": "Hardware",
+    "thumbClass": "thumb-pc",
+    "tags": [
+      "Stuttering",
+      "FPS",
+      "Frametime",
+      "Shaders",
+      "Rendimiento",
+      "PC gamer"
+    ]
+  },
+
+  {
     "slug": "posts/8-12-16-gb-vram-gaming-2026",
     "title": "¿Son suficientes 8 GB de VRAM en 2026? Cuándo elegir 12 o 16 GB",
     "date": "2026-10-10",
